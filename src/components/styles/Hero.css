@@ -1,0 +1,122 @@
+section:not(section section) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: calc(92vh - 20px);
+    width: 100vw;
+    overflow-x: hidden;
+    gap: 0;
+}
+
+section section {
+    display: flex;
+    flex-direction: column;
+    width: calc(100vw - 8%);
+    margin: 0 4%;
+    gap: 15px;
+}
+
+section div h2 {
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+section div h3 {
+    font-size: 24px;
+    font-weight: 100;
+    text-align: center;
+    letter-spacing: 1px;
+}
+section h3 {
+    font-size: 24px;
+    font-weight: 100;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+section .microbus-img {
+    margin-top: 24%;
+    margin-left: 12%;
+    width: 600px;
+}
+section .cuba-img {
+    position: absolute;
+    margin-top: 6%;
+    margin-left: 52%;
+    width: 180px;
+}
+
+section .subtitulo-hero {
+    position: absolute;
+    display: block;
+    font-size: 45px;
+    font-weight: 100;
+    margin-top: 8%;
+    margin-left: 4%;
+    color: #fff;
+}
+section .subtitulo-hero span {
+    font-weight: 600;
+}
+section .subtitulo-hero span::before {
+    content: '';
+    position: absolute;
+    background-color: #151515;
+    width: 20px;
+    height: 100%;
+    left: -20px;
+    z-index: -3;
+}
+
+.layer-1 {
+    position: absolute;
+    background-color: #151515;
+    width: 200px;
+    height: 80px;
+    margin-top: 20px;
+    border-radius: 0 10px 10px 0;
+    z-index: -3;
+}
+.layer-2 {
+    position: absolute;
+    background-color: #151515;
+    width: 200px;
+    height: 80px;
+    margin-top: 164.8px;
+    border-radius: 0 10px 0 0;
+    z-index: -3;
+}
+.layer-3 {
+    position: absolute;
+    background-color: #fff;
+    width: 200px;
+    height: 64.8px;
+    margin-top: 100px;
+    margin-left: 9px;
+    border-radius: 10px;
+    z-index: -2;
+}
+.layer-4 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 180px;
+    top: 244.8px;
+    z-index: -3 ;   
+}
+
+.color {
+    height: calc(180px / 4);
+    width: 100%;
+}
+.color-1 {
+    background-color: rgba(244, 100, 10, .8);
+}
+.color-2 {
+    background-color: rgb(244, 189, 10, .8);
+}
+.color-3 {
+    background-color: rgb(244, 189, 10, .5);
+    border-radius: 0 0 10px 0;
+}

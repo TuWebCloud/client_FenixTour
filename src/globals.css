@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Jost';
+    src: url('../public/fonts/Jost-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Jost';
+}
+
+h2, p {
+    color: #151515;
+}
+
+span {
+    color: #f4bd0a;
+}

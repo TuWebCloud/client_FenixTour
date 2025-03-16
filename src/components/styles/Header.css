@@ -1,0 +1,45 @@
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    margin: 4%;
+    padding: 10px;
+    background-color: #151515;
+    color: #fff;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 5px 15px #00000035;
+    top: 0;
+}
+
+header img {
+    height: 40px;
+}
+
+header h1 {
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+header ul {
+    list-style: none;
+    position: absolute;
+    top: -240%;
+    left: 85%;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 4px 8px #00000025;
+    z-index: -1;
+}
+
+header ul li {
+    padding: 5px 10px;
+}
+
+header button {
+    border: none;
+    height: 40px;
+    background-color: transparent;
+}

@@ -1,0 +1,68 @@
+.serviceLink {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+
+.link-img {
+    height: 60px;
+    width: 60px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.link-img img:not(article .link img) {
+    max-height: 60px;
+    object-fit: cover;
+}
+
+article .link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 300px;
+    border: 2px solid #f4bd0a;
+    border-bottom: 4px solid #f4bd0a;
+    border-radius: 20px;
+    padding: 4px 4%;
+}
+article .link a {
+    display: inline;    
+    font-size: 24px;
+    color: #151515;
+    text-decoration: none;
+    width: 80%;
+}
+article .link img {
+    width: 34px;
+}
+
+.vip {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    top: calc(60px + 8%);
+    left: 0;
+    right: 0;
+    bottom: auto;
+    margin-left: -5%;
+    margin-right: -5%;
+    width: 100vw;
+    font-size: 24px;
+    background-color: transparent;
+    color: #151515;
+    text-decoration: none;
+    padding: 8px 4%;
+    gap: 10px;
+}
+.vip span {
+    background-color: transparent;
+    color: #f4bd0a;
+    border-radius: 10px;
+    height: auto;
+}
