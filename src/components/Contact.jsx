@@ -18,6 +18,10 @@ export default function Contact () {
                     <img src="/public/icons/location-pin.svg" alt="Ubicación" />
                     Calle, No.#, Reparto, Holguín, Holguín.
                 </p>
+                <p>
+                    <img src="/public/icons/tag.svg" alt="Teléfono" />
+                    +53 42424242
+                </p>
             </section>
             <style jsx>{`
                 .section-contact {
@@ -46,12 +50,12 @@ export default function Contact () {
                 }
                 .section-contact p {
                     display: flex;
-                    margin-top: 20px;
+                    margin: 10px 5% 0;
                     font-size: 20px;
-                    place-content: center;
                 }
                 .section-contact p img {
                     width: 30px;
+                    margin-right: 8px;
                 }
                 .section-contact div {
                     display: flex;

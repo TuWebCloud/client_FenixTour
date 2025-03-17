@@ -44,7 +44,6 @@ export default function About () {
                     margin: 4%;
                     color:  #fff;
                     font-size: 24px;
-                    text-align: justify;
                 }
             `}</style>
         </>

@@ -23,8 +23,8 @@ function App() {
         <Contact />
         <Pagos />
         <Vehiculo />
-        <Footer />
       </main>
+      <Footer />
     </>
   )
 }

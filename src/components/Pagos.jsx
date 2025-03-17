@@ -6,8 +6,13 @@ export default function Pagos () {
                 <h3>Tu viaje, tus reglas</h3>
                 <p>
                     El precio variará en dependencia de la distancia y el tiempo que tome el viaje, y será acordado 
-                    con la persona a cargo. Siéntete libre de pagarnos de la forma que más te acomode...
+                    con la persona a cargo. Aceptamos transferencia y efectivo, siéntete libre de pagarnos de la forma que más te acomode...
                 </p>
+                <div>
+                    <img src="/public/bpa.png" alt="" />
+                    <img src="/public/bandec.jpg" alt="" />
+                    <img src="/public/metropolitano.jpg" alt="" />
+                </div>
                 <h3>Aceptamos: </h3>
                 <div>
                     <div>CUP</div>
@@ -44,7 +49,7 @@ export default function Pagos () {
                     margin: 4%;
                     font-size: 24px;
                 }
-                .section-pagos h3:nth-child(4) {
+                .section-pagos h3:nth-child(5) {
                     display: inline;
                     text-align: left;
                     margin: 0 4%;
@@ -53,7 +58,7 @@ export default function Pagos () {
                 }
                 .section-pagos div:not(.section-pagos div div) {
                     display: flex;
-                    flex-wrap: wrap;                    
+                    flex-wrap: wrap;        
                     padding: 4px 4% 20px;
                     gap: 15px;
                 }
@@ -66,6 +71,13 @@ export default function Pagos () {
                     border-radius: 10px;
                     padding: 2px 8px;
                     background-color: rgb(232, 114, 40);
+                }
+                .section-pagos div:nth-child(4) {
+                    justify-content: center;
+                    margin: 15px;
+                }
+                .section-pagos div img {
+                    height: 35px;
                 }
             `}</style>
         </>
