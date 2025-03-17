@@ -49,6 +49,7 @@ export default function CifrasBox ({ clientesSatisfechos, viajes }) {
                     font-size: 20px;
                     font-weight: 600;
                     text-align: center;
+                    color: #00000099;
                 }
                 .section-cifras img {
                     height: 60px;

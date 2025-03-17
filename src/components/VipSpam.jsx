@@ -12,6 +12,7 @@ export default function VipSpam () {
             <style jsx>{`
                 .section-vip {
                     height: auto;
+                    box-shadow: 0 5px 15px #00000055;
                 }
                 .section-vip h2 {
                     display: block;
