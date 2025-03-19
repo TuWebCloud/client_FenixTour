@@ -1,7 +1,7 @@
 export default function Vehiculo () {
     return (
         <>
-            <section className="section-vehiculo">
+            <section className="section-vehiculo" id="vehiculo">
                 <h2>Vehículo</h2>
                 <h3>Características</h3>
                 <div className="bento">

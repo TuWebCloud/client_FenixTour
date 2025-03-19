@@ -3,7 +3,7 @@ import InfoBox from "./InfoBox";
 export default function Viajes () {
     return (
         <>
-            <section className="section-viajes">
+            <section className="section-viajes" id="viajes">
                 <h2>Ofertas de Viaje</h2>
                 <h3>Tu destino lo eliges tú</h3>
                 <InfoBox titulo="Locales" bg="/public/la-periquera.jpeg">

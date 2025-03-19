@@ -1,7 +1,7 @@
 export default function Pagos () {
     return (
         <>
-            <section className="section-pagos">
+            <section className="section-pagos" id="pagos">
                 <h2>Métodos de Pago</h2>
                 <h3>Tu viaje, tus reglas</h3>
                 <p>
@@ -12,6 +12,7 @@ export default function Pagos () {
                     <img src="/public/bpa.png" alt="" />
                     <img src="/public/bandec.jpg" alt="" />
                     <img src="/public/metropolitano.jpg" alt="" />
+                    <img src="/public/zelle.png" alt="" />
                 </div>
                 <h3>Aceptamos: </h3>
                 <div>
@@ -74,10 +75,10 @@ export default function Pagos () {
                 }
                 .section-pagos div:nth-child(4) {
                     justify-content: center;
-                    margin: 15px;
+                    margin: 15px 0;
                 }
                 .section-pagos div img {
-                    height: 35px;
+                    height: 28px;
                 }
             `}</style>
         </>

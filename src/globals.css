@@ -9,6 +9,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Jost';
+    scroll-behavior: smooth;
 }
 
 h2, p {

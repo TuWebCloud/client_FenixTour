@@ -1,15 +1,24 @@
+import { useRef } from "react"
+
 export default function Contact () {
+    const handleCall = () => {
+        window.location.href = 'tel:+5352427622'
+    }
+    const handleWpp = () => {
+        window.location.href = 'https://wa.me/+5352427622?text=Hola'
+    }
+
     return (
         <>
-            <section className="section-contact">
+            <section className="section-contact" id="contact">
                 <h2>Contáctanos</h2>
                 <h3>Con un solo click</h3>
                 <div>
-                    <button>
+                    <button onClick={handleCall}>
                         <img src="/public/icons/call.svg" alt="Teléfono" />
                         Llamar
                     </button>
-                    <button>
+                    <button onClick={handleWpp}>
                         <img src="/public/icons/whatsapp.svg" alt="Whatsapp" />
                         Escribir
                     </button>

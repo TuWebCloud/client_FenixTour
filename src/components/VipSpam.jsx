@@ -1,7 +1,7 @@
 export default function VipSpam () {
     return (
         <>
-            <section className="section-vip">
+            <section className="section-vip" id="vip">
                 <h2>Servicio <span>VIP</span></h2>
                 <h3>Mejora tu Experiencia</h3>
                 <p>
