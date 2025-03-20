@@ -7,8 +7,7 @@ export default function Viajes () {
                 <h2>Ofertas de Viaje</h2>
                 <h3>Tu destino lo eliges tú</h3>
                 <InfoBox titulo="Locales" bg="/public/la-periquera.jpeg">
-                    Coordina viajes dentro de la provincia, ya sea para ir a otro municipio como para ir o volver 
-                    de una playa.
+                    Coordina viajes a múltiples lugares de la provincia, ya sea <br/>a playas, restaurantes o aeropuertos.
                 </InfoBox>
                 <InfoBox titulo="Interprovinciales" bg="/public/la-habana-info.webp">
                     Si necesitas viajar hacia otra provincia no es un problema, con nosotros puedes trasladarte de 

@@ -8,6 +8,7 @@ export default function Footer () {
                     <img src="/public/icons/telegram.svg" alt="Telegram" />
                     <img src="/public/icons/facebook.svg" alt="Facebook" />
                 </div>
+                <p>Holguín, Holguín, Cuba.</p>
                 <p>&copy; 2025 <a href="https://tuweb.cu" target="_blank">TuWeb</a></p>
             </footer>
             <style jsx>{`
@@ -24,7 +25,7 @@ export default function Footer () {
                     flex-direction: row;
                     gap: 15px;
                     width: auto;
-                    padding: 30px 10px 10px;
+                    padding: 30px 10px;
                 }
                 footer img {
                     width: 40px;
@@ -32,8 +33,9 @@ export default function Footer () {
                 footer p {
                     color: #fff;
                     font-size: 20px;
+                    font-weight: 100;
                     text-align: center;
-                    padding: 10px;
+                    padding: 0 4px 4px;
                 }
                 footer p a {
                     color: #fff;

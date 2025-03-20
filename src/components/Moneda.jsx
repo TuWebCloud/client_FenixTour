@@ -1,22 +1,24 @@
 import { bancos } from '../const/bancos.js'
 
-export default function Moneda({ name, isBpa, isBandec, isMetropolitano, isZelle }) {
+export default function Moneda({ name, noBorder, isBpa, isBandec, isMetropolitano, isZelle }) {
+    const className = `article-moneda ${!noBorder ? "no-border" : ""}`
+
     return (
         <>
-            <article className="article-moneda">
+            <article className={className}>
                 <p>{name}</p>
                 <div>
                     {isBpa &&
-                        <img src={bancos.bpa} alt="bpa" />
+                        <img src={bancos.bpa} alt="bpa" className='bpa' />
                     }
                     {isBandec &&
-                        <img src={bancos.bandec} alt="bandec" />
+                        <img src={bancos.bandec} alt="bandec" className='bandec' />
                     }
                     {isMetropolitano &&
-                        <img src={bancos.metropolitano} alt="metropolitano" />
+                        <img src={bancos.metropolitano} alt="metropolitano" className='metropolitano' />
                     }
                     {isZelle &&
-                        <img src={bancos.zelle} alt="zelle" />
+                        <img src={bancos.zelle} alt="zelle" className='zelle' />
                     }
                 </div>
             </article>
@@ -24,8 +26,7 @@ export default function Moneda({ name, isBpa, isBandec, isMetropolitano, isZelle
                 .article-moneda {
                     display: flex;
                     flex-direction: row;
-                    border-bottom: 1px solid #00000088;
-                    padding: 4%;
+                    padding: 4% 0;
                     width: 100%;
                     gap: 40px;
                 }
@@ -40,10 +41,24 @@ export default function Moneda({ name, isBpa, isBandec, isMetropolitano, isZelle
                     flex-direction: row;
                     flex-wrap: wrap;
                     place-items: center;
-                    gap: 15px;
+                    gap: 20px;
                 }
                 .article-moneda div img {
                     height: 28px;
+                }
+
+                .no-border{
+                    border-bottom: 1px solid #00000055;
+                }
+
+                .bpa {
+                    height: 24px !important;
+                }
+                .bandec {
+                    height: 30px !important;
+                }
+                .zelle {
+                    height: 34px !important;
                 }
             `}</style>
         </>

@@ -7,14 +7,13 @@ export default function Pagos () {
                 <h2>Métodos de Pago</h2>
                 <h3 className='frase'>Tu viaje, tus reglas</h3>
                 <p>
-                    El precio variará en dependencia de la distancia y el tiempo que tome el viaje, y será acordado 
-                    con la persona a cargo. Aceptamos transferencia y efectivo, siéntete libre de pagarnos de la forma que más te acomode...
+                Aceptamos pagos por transferencia bancaria y en efectivo. Siéntete libre de pagarnos de la forma que más te acomode...
                 </p>
                 <h3 className='aceptamos'>Aceptamos:</h3>
                 <div>
                     <Moneda name='CUP' isBpa isBandec isMetropolitano />
                     <Moneda name='MLC' isBpa isBandec />
-                    <Moneda name='USD' isZelle />
+                    <Moneda name='USD' isZelle noBorder/>
                 </div>
             </section>
             <style jsx>{`
@@ -53,11 +52,10 @@ export default function Pagos () {
                     font-size: 30px;
                     font-weight: 600;
                 }
-                .section-pages div {
+                .section-pagos div:not(.article-moneda div) {
                     display: flex;
                     flex-direction: column;
                     margin: 0 4%;
-                    gap: 10px;
                 }
             `}</style>
         </>
