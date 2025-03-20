@@ -1,3 +1,5 @@
+import { bancos } from '../const/bancos.js'
+
 export default function Moneda({ name, isBpa, isBandec, isMetropolitano, isZelle }) {
     return (
         <>
@@ -5,16 +7,16 @@ export default function Moneda({ name, isBpa, isBandec, isMetropolitano, isZelle
                 <p>{name}</p>
                 <div>
                     {isBpa &&
-                        <img src="/public/bpa.png" alt="bpa" />
+                        <img src={bancos.bpa} alt="bpa" />
                     }
                     {isBandec &&
-                        <img src="/public/bandec.jpg" alt="bandec" />
+                        <img src={bancos.bandec} alt="bandec" />
                     }
                     {isMetropolitano &&
-                        <img src="/public/metropolitano.jpg" alt="metropolitano" />
+                        <img src={bancos.metropolitano} alt="metropolitano" />
                     }
                     {isZelle &&
-                        <img src="/public/zelle.png" alt="zelle" />
+                        <img src={bancos.zelle} alt="zelle" />
                     }
                 </div>
             </article>
