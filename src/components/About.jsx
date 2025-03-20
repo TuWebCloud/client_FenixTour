@@ -2,7 +2,7 @@ export default function About () {
     return (
         <>
             <section className="section-about" id="about">
-                <h2><span>¿</span> Quiénes Somos <span>?</span></h2>
+                <h2><span>¿</span>Quiénes Somos<span>?</span></h2>
                 <h3>Alquiler de microbus</h3>
                 <p>
                     <span>&gt; </span>Somos una empresa dedicada al transporte de personas radicada en Holguín, 

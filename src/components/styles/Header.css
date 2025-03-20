@@ -27,8 +27,7 @@ header h1 {
 
 header ul {
     list-style: none;
-    position: fixed;/*
-    top: -280px;*/
+    position: fixed;
     top: 28px;
     right: 20px;
     width: 200px;

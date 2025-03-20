@@ -1,5 +1,3 @@
-import { useRef } from "react"
-
 export default function Contact () {
     const handleCall = () => {
         window.location.href = 'tel:+5352427622'
@@ -53,6 +51,7 @@ export default function Contact () {
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
+                    margin: 0 4%;
                     gap: 20px;
                 }
                 .section-contact div button {

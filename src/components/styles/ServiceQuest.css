@@ -1,0 +1,28 @@
+.serviceQuest {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+
+article .quest {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 300px;
+    border: 2px solid #f4bd0a;
+    border-bottom: 4px solid #f4bd0a;
+    border-radius: 20px;
+    padding: 4px 4%;
+}
+article .quest p {
+    display: inline;    
+    font-size: 24px;
+    color: #151515;
+    width: 80%;
+}
+article .quest img {
+    width: 34px;
+}

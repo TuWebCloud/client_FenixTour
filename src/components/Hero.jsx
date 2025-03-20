@@ -1,4 +1,4 @@
-import ServiceLink from './ServiceLink'
+import ServiceQuest from './ServiceQuest'
 import './styles/Hero.css'
 
 export default function Hero ({ transporte }) {
@@ -23,16 +23,13 @@ export default function Hero ({ transporte }) {
                     <h2>Viajes a todo el país</h2>
                     <h3>¿A dónde quieres ir?</h3>
                 </div>
-                <ServiceLink
-                    image="../../public/playa.webp"
+                <ServiceQuest
                     icono="../../public/icons/hiking.svg"
                     text="¿De excursión?" />
-                <ServiceLink
-                    image="../../public/la-habana.webp"
+                <ServiceQuest
                     icono="../../public/icons/map.svg"
                     text="¿A otra provincia?" />
-                <ServiceLink
-                    image="../../public/aeropuerto.webp"
+                <ServiceQuest
                     icono="../../public/icons/plane.svg"
                     text="¿A un aeropuerto?" />
                 <h3>¿Algo más en mente? <span>Dínoslo</span></h3>

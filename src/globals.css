@@ -19,3 +19,22 @@ h2, p {
 span {
     color: #f4bd0a;
 }
+
+@media screen and (min-width: 430px) {
+    header nav {
+        width: calc(430px - 12%) !important;
+        margin: 19.9625px !important;
+    }
+    section {
+        width: 430px !important;
+    }
+    section section {
+        width: calc(430px - 8%) !important;
+    }
+    .section-cifras {
+        width: calc(430px - 16%) !important;
+    }
+    footer {
+        width: 430px !important;
+    }
+}

@@ -9,7 +9,7 @@ export default function Footer () {
                     <img src="/public/icons/facebook.svg" alt="Facebook" />
                 </div>
                 <p>Holguín, Holguín, Cuba.</p>
-                <p>&copy; 2025 <a href="https://tuweb.cu" target="_blank">TuWeb</a></p>
+                <p>2025 &copy; TuWeb</p>
             </footer>
             <style jsx>{`
                 footer {
