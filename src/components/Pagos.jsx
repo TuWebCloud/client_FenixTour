@@ -1,24 +1,20 @@
+import Moneda from './Moneda'
+
 export default function Pagos () {
     return (
         <>
             <section className="section-pagos" id="pagos">
                 <h2>Métodos de Pago</h2>
-                <h3>Tu viaje, tus reglas</h3>
+                <h3 className='frase'>Tu viaje, tus reglas</h3>
                 <p>
                     El precio variará en dependencia de la distancia y el tiempo que tome el viaje, y será acordado 
                     con la persona a cargo. Aceptamos transferencia y efectivo, siéntete libre de pagarnos de la forma que más te acomode...
                 </p>
+                <h3 className='aceptamos'>Aceptamos:</h3>
                 <div>
-                    <img src="/public/bpa.png" alt="" />
-                    <img src="/public/bandec.jpg" alt="" />
-                    <img src="/public/metropolitano.jpg" alt="" />
-                    <img src="/public/zelle.png" alt="" />
-                </div>
-                <h3>Aceptamos: </h3>
-                <div>
-                    <div>CUP</div>
-                    <div>USD</div>
-                    <div>MLC</div>
+                    <Moneda name='CUP' isBpa isBandec isMetropolitano />
+                    <Moneda name='MLC' isBpa isBandec />
+                    <Moneda name='USD' isZelle />
                 </div>
             </section>
             <style jsx>{`
@@ -42,7 +38,7 @@ export default function Pagos () {
                     left: 50%;
                     transform: translateX(-50%);
                 }
-                .section-pagos h3:nth-child(2) {
+                .frase {
                     margin-top: -18px;
                     color: #00000077;
                 }
@@ -50,35 +46,18 @@ export default function Pagos () {
                     margin: 4%;
                     font-size: 24px;
                 }
-                .section-pagos h3:nth-child(5) {
+                .aceptamos {
                     display: inline;
                     text-align: left;
-                    margin: 0 4%;
+                    margin: 20px 4%;
                     font-size: 30px;
                     font-weight: 600;
                 }
-                .section-pagos div:not(.section-pagos div div) {
+                .section-pages div {
                     display: flex;
-                    flex-wrap: wrap;        
-                    padding: 4px 4% 20px;
-                    gap: 15px;
-                }
-                .section-pagos div div {
-                    font-size: 20px;
-                    font-weight: 900;
-                    color: #fff;
-                    vertical-align: middle;
-                    letter-spacing: 2px;
-                    border-radius: 10px;
-                    padding: 2px 8px;
-                    background-color: rgb(232, 114, 40);
-                }
-                .section-pagos div:nth-child(4) {
-                    justify-content: center;
-                    margin: 15px 0;
-                }
-                .section-pagos div img {
-                    height: 28px;
+                    flex-direction: column;
+                    margin: 0 4%;
+                    gap: 10px;
                 }
             `}</style>
         </>

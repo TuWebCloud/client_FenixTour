@@ -114,12 +114,12 @@ section .subtitulo-hero span::before {
     width: 100%;
 }
 .color-1 {
-    background-color: rgba(244, 139, 10, 0.8);
+    background-color: rgba(244, 189, 10, .8);
 }
 .color-2 {
-    background-color: rgb(244, 189, 10, .8);
+    background-color: rgba(244, 189, 10, .6);
 }
 .color-3 {
-    background-color: rgb(244, 189, 10, .5);
+    background-color: rgba(244, 189, 10, .4);
     border-radius: 0 0 10px 0;
 }

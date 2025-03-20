@@ -80,7 +80,7 @@ export default function Header({ logo, marca }) {
                 lista.style.height = "0px"
                 lista.style.top = "28px"
             } else {
-                lista.style.height = "232px"
+                lista.style.height = "192px"
                 lista.style.top = "60px"
             }
        }
@@ -97,11 +97,10 @@ export default function Header({ logo, marca }) {
             </nav>
             <ul ref={listaRef}>
                 <li><a href="#about">¿Quiénes Somos?</a></li>
-                <li><a href="#viajes">Ofertas de Viaje</a></li>
-                <li><a href="#vip">Servicio VIP</a></li>
-                <li><a href="#contact">Contáctanos</a></li>
-                <li><a href="#pagos">Métodos de Pago</a></li>
                 <li><a href="#vehiculo">Acerca del Vehículo</a></li>
+                <li><a href="#viajes">Ofertas de Viaje</a></li>
+                <li><a href="#pagos">Métodos de Pago</a></li>
+                <li><a href="#contact">Contáctanos</a></li>
             </ul>
         </header>
     );

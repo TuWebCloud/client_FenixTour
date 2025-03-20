@@ -69,7 +69,7 @@ export default function Contact () {
                     transition: all .2s ease;
                 }
                 .section-contact div button:hover {
-                    background-color: rgba(244, 127, 10);
+                    background-color: rgb(198, 96, 32);
                 }
                 .section-contact div button img {
                     width: 40px;

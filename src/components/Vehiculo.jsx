@@ -91,6 +91,12 @@ export default function Vehiculo () {
                     width: 100%;
                     height: 100%;
                 }
+
+                @media screen and (max-width: 407px) {
+                    .bento p {
+                        font-size: 36px;
+                    }
+                }
             `}</style>
         </>
     )
