@@ -11,7 +11,8 @@ export default function Header({ logo, marca }) {
           const enlaces = lista.querySelectorAll("a");
           enlaces.forEach((enlace) => {
             enlace.addEventListener("click", () => {
-              lista.style.top = "-280px";
+              lista.style.height = "0px"
+              lista.style.top = "28px"
               if (window.scrollY > 50)
                 setToggle('/public/icons/menu-black.svg')
               else setToggle('/public/icons/menu-black.svg')
@@ -21,7 +22,8 @@ export default function Header({ logo, marca }) {
           return () => {
             enlaces.forEach((enlace) => {
               enlace.removeEventListener("click", () => {
-                lista.style.top = "-280px";
+                lista.style.height = "0px"
+                lista.style.top = "28px"
                 if (window.scrollY > 50)
                     setToggle('/public/icons/menu-black.svg')
                 else setToggle('/public/icons/menu-black.svg')
@@ -30,6 +32,7 @@ export default function Header({ logo, marca }) {
           };
         }
     }, []);
+
     useEffect(() => {
         const handleScroll = () => {
             const navbar = document.getElementById("navbar")
@@ -71,14 +74,16 @@ export default function Header({ logo, marca }) {
         }
 
         const lista = listaRef.current
-        if (lista) {
-            const currentTop = parseInt(window.getComputedStyle(lista).top, 10);
-            if (currentTop < 0) {
-                lista.style.top = "60px"
+       if (lista) {
+            const currentHeight = parseInt(window.getComputedStyle(lista).height, 10);
+            if (currentHeight > 0) {
+                lista.style.height = "0px"
+                lista.style.top = "28px"
             } else {
-                lista.style.top = "-280px"
+                lista.style.height = "232px"
+                lista.style.top = "60px"
             }
-        }
+       }
     }
 
     return (

@@ -36,7 +36,7 @@ export default function InfoBox ({ children, titulo, bg }) {
                 .infoBox h3 {
                     text-align: left;
                     display: block;
-                    font-size: 42px;
+                    font-size: 35px;
                     font-weight: 600;
                     color: #fff;
                     position: relative;

@@ -26,15 +26,15 @@ export default function Hero ({ transporte }) {
                 <ServiceLink
                     image="../../public/playa.webp"
                     icono="../../public/icons/hiking.svg"
-                    text="De excursión?" />
+                    text="¿De excursión?" />
                 <ServiceLink
                     image="../../public/la-habana.webp"
                     icono="../../public/icons/map.svg"
-                    text="A otra provincia?" />
+                    text="¿A otra provincia?" />
                 <ServiceLink
                     image="../../public/aeropuerto.webp"
                     icono="../../public/icons/plane.svg"
-                    text="A un aeropuerto?" />
+                    text="¿A un aeropuerto?" />
                 <h3>¿Algo más en mente? <span>Dínoslo</span></h3>
             </section>
         </section>

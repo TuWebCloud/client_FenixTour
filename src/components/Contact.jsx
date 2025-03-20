@@ -23,14 +23,6 @@ export default function Contact () {
                         Escribir
                     </button>
                 </div>
-                <p>
-                    <img src="/public/icons/location-pin.svg" alt="Ubicación" />
-                    Calle, No.#, Reparto, Holguín, Holguín.
-                </p>
-                <p>
-                    <img src="/public/icons/tag.svg" alt="Teléfono" />
-                    +53 42424242
-                </p>
             </section>
             <style jsx>{`
                 .section-contact {
@@ -57,15 +49,6 @@ export default function Contact () {
                     margin-top: -18px;
                     color: #00000077;
                 }
-                .section-contact p {
-                    display: flex;
-                    margin: 10px 5% 0;
-                    font-size: 20px;
-                }
-                .section-contact p img {
-                    width: 30px;
-                    margin-right: 8px;
-                }
                 .section-contact div {
                     display: flex;
                     flex-direction: row;
@@ -86,7 +69,7 @@ export default function Contact () {
                     transition: all .2s ease;
                 }
                 .section-contact div button:hover {
-                    background-color: rgb(203, 100, 36);
+                    background-color: rgba(244, 127, 10);
                 }
                 .section-contact div button img {
                     width: 40px;
