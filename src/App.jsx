@@ -17,12 +17,11 @@ function App() {
       <main>
         <Hero transporte='../public/furgoneta-hero.png' />
         <About />
+        <Vehiculo />
         <CifrasBox clientesSatisfechos="942" viajes="268" />
         <Viajes />
-        <VipSpam />
-        <Contact />
         <Pagos />
-        <Vehiculo />
+        <Contact />
       </main>
       <Footer />
     </>

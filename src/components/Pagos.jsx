@@ -24,7 +24,7 @@ export default function Pagos () {
             <style jsx>{`
                 .section-pagos {
                     height: auto;
-                    box-shadow: 0 -5px 15px #00000055;
+                    box-shadow: 0 8px 20px #00000055;
                 }
                 .section-pagos h2 {
                     display: block;

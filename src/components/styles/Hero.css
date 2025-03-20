@@ -2,13 +2,13 @@ section:not(section section) {
     position: relative;
     display: flex;
     flex-direction: column;
-    height: calc(92vh - 20px);
     width: 100vw;
     overflow-x: hidden;
-    gap: 0;
+    gap: 0;    
 }
 .section-hero {    
     padding-top: calc(40px + 8%);
+    margin-bottom: 60px;
 }
 
 section section {
