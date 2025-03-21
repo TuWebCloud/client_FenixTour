@@ -20,9 +20,18 @@ span {
     color: #f4bd0a;
 }
 
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 431px) {
+    div:first-child {
+        position: relative;
+        width: 430px !important;
+    }
+
+    header {
+        width: 430px !important;
+    }
+
     header nav {
-        width: calc(430px - 12%) !important;
+        width: calc(368px) !important;
         margin: 19.9625px !important;
     }
     section {

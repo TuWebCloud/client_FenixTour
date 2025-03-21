@@ -13,17 +13,19 @@ import Pagos from './components/Pagos.jsx'
 function App() {
   return (
     <>
-      <Header logo="/public/logo.png" marca="FénixCar" />
-      <main>
-        <Hero transporte='../public/furgoneta-hero.png' />
-        <About />
-        <Vehiculo />
-        <CifrasBox clientesSatisfechos="942" viajes="268" />
-        <Viajes />
-        <Pagos />
-        <Contact />
-      </main>
-      <Footer />
+      <div>
+        <Header logo="/public/logo.png" marca="FénixCar" />
+        <main>
+          <Hero transporte='../public/furgoneta-hero.png' />
+          <About />
+          <Vehiculo />
+          <CifrasBox clientesSatisfechos="942" viajes="268" />
+          <Viajes />
+          <Pagos />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
     </>
   )
 }
