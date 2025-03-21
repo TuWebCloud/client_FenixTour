@@ -20,6 +20,7 @@ span {
     color: #f4bd0a;
 }
 
+/* RESPONSIVE TEMPORAL */
 @media screen and (min-width: 431px) {
     div:first-child {
         position: relative;
@@ -43,6 +44,11 @@ span {
     .section-cifras {
         width: calc(430px - 16%) !important;
     }
+
+    .infoBox {
+        width: 361.53px !important;
+    }
+
     footer {
         width: 430px !important;
     }

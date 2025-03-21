@@ -23,6 +23,7 @@ export default function Footer () {
                 footer div {
                     display: flex;
                     flex-direction: row;
+                    place-content: center;
                     gap: 15px;
                     width: auto;
                     padding: 30px 10px;

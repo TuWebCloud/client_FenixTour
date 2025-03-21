@@ -4,7 +4,7 @@ import './styles/Hero.css'
 export default function Hero ({ transporte }) {
     return (
         <section className='section-hero'>
-            <h2 className='subtitulo-hero'>Elige tu <br/><span>destino</span></h2>
+            <h2 className='subtitulo-hero'>Viaja con <br/><span>nosotros</span></h2>
             <img src={transporte} alt="Microbus" className='microbus-img' />
             <img src='../../public/cuba.svg' alt="Mapa de Cuba" className='cuba-img' />
 

@@ -44,8 +44,8 @@ section .microbus-img {
 }
 section .cuba-img {
     position: absolute;
-    margin-top: 6%;
-    margin-left: 52%;
+    margin-top: 8%;
+    margin-left: 55%;
     width: 180px;
 }
 
@@ -74,16 +74,16 @@ section .subtitulo-hero span::before {
 .layer-1 {
     position: absolute;
     background-color: #151515;
-    width: 200px;
-    height: 80px;
-    margin-top: 20px;
+    width: 210px;
+    height: 64px;
+    margin-top: 36px;
     border-radius: 0 10px 10px 0;
     z-index: -3;
 }
 .layer-2 {
     position: absolute;
     background-color: #151515;
-    width: 200px;
+    width: 210px;
     height: 80px;
     margin-top: 164.8px;
     border-radius: 0 10px 0 0;
@@ -92,7 +92,7 @@ section .subtitulo-hero span::before {
 .layer-3 {
     position: absolute;
     background-color: #fff;
-    width: 200px;
+    width: 210px;
     height: 64.8px;
     margin-top: 100px;
     margin-left: 9px;
@@ -103,7 +103,7 @@ section .subtitulo-hero span::before {
     position: absolute;
     display: flex;
     flex-direction: column;
-    width: 200px;
+    width: 210px;
     height: 180px;
     margin-top: 244.8px;
     z-index: -3 ;   
