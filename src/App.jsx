@@ -13,7 +13,7 @@ import Pagos from './components/Pagos.jsx'
 function App() {
   return (
     <>
-      <div>
+      <div className="full-container">
         <Header logo="/public/logo.png" marca="FénixCar" />
         <main>
           <Hero transporte='../public/furgoneta-hero.png' />

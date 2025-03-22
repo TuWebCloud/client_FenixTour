@@ -12,6 +12,10 @@
     scroll-behavior: smooth;
 }
 
+.full-container {
+    background-color: #fff;
+}
+
 h2, p {
     color: #151515;
 }
@@ -22,31 +26,57 @@ span {
 
 /* RESPONSIVE TEMPORAL */
 @media screen and (min-width: 431px) {
-    div:first-child {
+    .full-container {
         position: relative;
         width: 430px !important;
+        margin-left: 50%;
+        transform: translateX(-50%);
     }
 
     header {
         width: 430px !important;
     }
-
     header nav {
         width: calc(368px) !important;
         margin: 19.9625px !important;
     }
+    header ul {
+        right: 50% !important;
+        transform: translateX(50%);
+    }
+
     section {
         width: 430px !important;
     }
     section section {
         width: calc(430px - 8%) !important;
     }
+
+    .quest {
+        margin-left: 0 !important;
+        transform: translateX(0) !important;
+    }
+
     .section-cifras {
         width: calc(430px - 16%) !important;
     }
+    .section-cifras div {
+        width: auto !important;
+        margin-left: 0;
+        transform: translateX(0);
+    }
 
+    .section-viajes {
+        place-content: center;
+    }
     .infoBox {
-        width: 361.53px !important;
+        width: 410px !important;
+    }
+    .infoBox div {
+        width: 100% !important;
+    }
+    .infoBox div:hover {
+        transform: scale(1.03) !important;
     }
 
     footer {
