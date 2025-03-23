@@ -6,7 +6,7 @@ section:not(section section) {
     overflow-x: hidden;
     gap: 0;    
 }
-.section-hero {    
+.section-hero {
     padding-top: calc(40px + 8%);
     margin-bottom: 60px;
 }
@@ -108,7 +108,6 @@ section .subtitulo-hero span::before {
     margin-top: 244.8px;
     z-index: -3 ;   
 }
-
 .color {
     height: calc(180px / 4);
     width: 100%;

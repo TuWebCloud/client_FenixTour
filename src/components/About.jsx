@@ -7,9 +7,9 @@ export default function About () {
                 <p>
                     <span>&gt; </span>Somos una empresa dedicada al transporte de personas radicada en Holguín, 
                     puedes contar con nosotros para cualquier viaje dentro del país, los límites los pones tú! 
-                    Disponemos de un microbus de 15 plazas, que cuenta con un chofer experimentado y un mecánico para garantizar
-                    la seguridad y el confort del recorrido. Olvídate de depender del transporte público, es hora de que te 
-                    relajes y disfrutes del trayecto.
+                    Disponemos de un microbus de 15 plazas, que cuenta con un chofer experimentado y un servicio de mecánico 
+                    para garantizar la seguridad y el confort del recorrido. Olvídate de depender del transporte público, 
+                    es hora de que te relajes y disfrutes del trayecto.
                 </p>
             </section>
             <style jsx>{`

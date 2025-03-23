@@ -3,6 +3,7 @@ import "./styles/Header.css"
 
 export default function Header({ logo, marca }) {
     const [toggle, setToggle] = useState("/public/icons/menu.svg")
+    const [logoTemp, setLogoTemp] = useState('/public/logo.png')
     const listaRef = useRef(null);
 
     useEffect(() => {
@@ -41,12 +42,14 @@ export default function Header({ logo, marca }) {
             if (window.scrollY > 50) {
                 navbar.style.backgroundColor = "#fff"
                 marca.style.color = "#151515"
+                setLogoTemp('/public/logo-white.jpg')
                 if (toggle === '/public/icons/menu.svg' || toggle === '/public/icons/menu-black.svg')
                     setToggle('/public/icons/menu-black.svg')
                 else setToggle('/public/icons/close-black.svg')
             } else {
                 navbar.style.backgroundColor = "#151515"
                 marca.style.color = "#fff"
+                setLogoTemp('/public/logo.png')
                 if (toggle === '/public/icons/menu.svg' || toggle === '/public/icons/menu-black.svg')
                     setToggle('/public/icons/menu.svg')
                 else setToggle('/public/icons/close.svg')
@@ -89,7 +92,7 @@ export default function Header({ logo, marca }) {
     return (
         <header>
             <nav id="navbar">
-            <img src={logo} alt="Logo" />
+            <img src={logoTemp} alt="Logo" />
             <h1>{marca}</h1>
             <button onClick={handleClick}>
                 <img src={toggle} alt="toggle" />

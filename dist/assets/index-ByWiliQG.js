@@ -424,4 +424,4 @@ Error generating stack: `+a.message+`
                     flex-direction: column;
                     margin: 0 4%;
                 }
-            `})]})}function Xh(){return h.jsx(h.Fragment,{children:h.jsxs("div",{children:[h.jsx(Rh,{logo:"/public/logo.png",marca:"FénixCar"}),h.jsxs("main",{children:[h.jsx(Hh,{transporte:"../public/furgoneta-hero.png"}),h.jsx(Mh,{}),h.jsx(Bh,{}),h.jsx(Uh,{clientesSatisfechos:"942",viajes:"268"}),h.jsx(Nh,{}),h.jsx(Gh,{}),h.jsx(qh,{})]}),h.jsx(Yh,{})]})})}jh.createRoot(document.getElementById("root")).render(h.jsx(ze.StrictMode,{children:h.jsx(Xh,{})}));
+            `})]})}function Xh(){return h.jsx(h.Fragment,{children:h.jsxs("div",{className:"full-container",children:[h.jsx(Rh,{logo:"/public/logo.png",marca:"FénixCar"}),h.jsxs("main",{children:[h.jsx(Hh,{transporte:"../public/furgoneta-hero.png"}),h.jsx(Mh,{}),h.jsx(Bh,{}),h.jsx(Uh,{clientesSatisfechos:"942",viajes:"268"}),h.jsx(Nh,{}),h.jsx(Gh,{}),h.jsx(qh,{})]}),h.jsx(Yh,{})]})})}jh.createRoot(document.getElementById("root")).render(h.jsx(ze.StrictMode,{children:h.jsx(Xh,{})}));
