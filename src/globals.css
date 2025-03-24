@@ -26,8 +26,42 @@ span {
     color: #f4bd0a;
 }
 
+@media screen and (min-width: 600px) {
+    .full-container {
+        position: relative;
+        width: 100vw !important;
+        background: linear-gradient(to right, #f4bd0a 50%, #fff 50%) !important;
+    }
+
+    header nav {
+        width: calc(100vw - 20px);
+        margin: 0;
+        border-radius: 0;
+    }
+    
+    .section-hero .microbus-img {
+        margin-top: 0;
+        margin-left: 47%;
+        transform: translateX(-50%);
+        width: 700px;
+    }
+    .section-hero .cuba-img {
+        position: absolute;
+        margin-top: 0px;
+        margin-left: 60%;
+        width: 500px;
+    }
+    .subtitulo-hero {
+        font-size: 80px !important;
+        font-weight: 600 !important;
+        margin-top: 0 !important;
+        margin-left: 8% !important;
+        color: #151515 !important;
+    }
+}
+
 /* RESPONSIVE TEMPORAL */
-@media screen and (min-width: 431px) {
+@media screen and (min-width: 431px) and (max-width: 599px) {
     .full-container {
         position: relative;
         width: 430px !important;
