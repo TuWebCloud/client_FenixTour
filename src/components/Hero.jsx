@@ -7,17 +7,24 @@ export default function Hero ({ transporte }) {
     
     useEffect(() => {
         if (window.innerWidth >= 600) {
-            setVehiculo('/public/microbus-pc.png')
+            setVehiculo('/public/microbus-pc2.png')
         }
     }, [])
 
     return (
         <section className='section-hero'>
-            <h2 className='subtitulo-hero'>Viaja con <br/>nosotros</h2>
+            <h2 className='subtitulo-hero'>Viaja con <br/>
+            {window.innerWidth >= 600 &&
+                <>nosotros</>
+            }
+            {window.innerWidth < 600 &&
+                <span>nosotros</span>
+            }
+            </h2>
             <img src={vehiculo} alt="Microbus" className='microbus-img' />
             <img src='../../public/cuba.svg' alt="Mapa de Cuba" className='cuba-img' />
 
-            {window.innerWidth < 600 && // todo
+            {window.innerWidth < 600 &&
                 <>
                     <div className="layer-1"></div>
                     <div className="layer-2"></div>
