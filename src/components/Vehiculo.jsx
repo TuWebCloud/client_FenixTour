@@ -2,20 +2,42 @@ export default function Vehiculo () {
     return (
         <>
             <section className="section-vehiculo" id="vehiculo">
-                <h2>Vehículo</h2>
-                <h3>Características</h3>
-                <div className="bento">
-                    <p>Mercedes Benz 2019 Sprinter</p>
-                    <div>
-                        <img src="/public/furgoneta-interior.jpg" alt="Interior" />
+                {window.innerWidth < 600 &&
+                    <>
+                    <h2>Vehículo</h2>
+                    <h3>Características</h3>
+                    <div className="bento">
+                        <p>Mercedes Benz 2019 Sprinter</p>
+                        <div>
+                            <img src="/public/furgoneta-interior.jpg" alt="Interior" />
+                        </div>
+                        <div>
+                            <img src="/public/furgoneta-2.jpg" alt="Furgoneta" />
+                        </div>
+                        <div>
+                            <img src="/public/furgoneta.jpg" alt="Furgoneta" />
+                        </div>
                     </div>
-                    <div>
-                        <img src="/public/furgoneta-2.jpg" alt="Furgoneta" />
+                    </>
+                }
+                {window.innerWidth >= 600 && 
+                    <div className="vehiculo-grid">
+                        <h2>Vehículo</h2>
+                        <h3>Características</h3>
+                        <div className="bento">
+                            <p>Mercedes Benz 2019 Sprinter</p>
+                            <div>
+                                <img src="/public/furgoneta-interior.jpg" alt="Interior" />
+                            </div>
+                            <div>
+                                <img src="/public/furgoneta-2.jpg" alt="Furgoneta" />
+                            </div>
+                            <div>
+                                <img src="/public/furgoneta.jpg" alt="Furgoneta" />
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <img src="/public/furgoneta.jpg" alt="Furgoneta" />
-                    </div>
-                </div>
+                }
                 <ul>
                     <li>Compartimento para equipaje</li>
                     <li>Kit de primeros auxilios</li>
@@ -37,6 +59,7 @@ export default function Vehiculo () {
                     gap: 15px;
                 }
                 .section-vehiculo h2 {
+                    position: relative;
                     display: block;
                     text-align: center;
                     color:  #fff;

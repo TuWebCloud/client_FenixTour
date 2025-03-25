@@ -42,6 +42,7 @@ export default function About () {
                     gap: 20px;
                 }
                 .section-about h2 {
+                    position: relative;
                     display: block;
                     text-align: center;
                     color:  #fff;
