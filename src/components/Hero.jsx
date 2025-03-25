@@ -21,6 +21,9 @@ export default function Hero ({ transporte }) {
                 <span>nosotros</span>
             }
             </h2>
+            {window.innerWidth >= 600 &&
+                <h3 className='subtitulo-pc'>Hasta cualquier <br/>rincón de Cuba</h3>
+            }
             <img src={vehiculo} alt="Microbus" className='microbus-img' />
             <img src='../../public/cuba.svg' alt="Mapa de Cuba" className='cuba-img' />
 
@@ -40,8 +43,17 @@ export default function Hero ({ transporte }) {
 
             <section>
                 <div>
-                    <h2>Viajes a todo el país</h2>
-                    <h3>¿A dónde quieres ir?</h3>
+                    {window.innerWidth < 600 &&
+                        <>
+                        <h2>Viajes a todo el país</h2>
+                        <h3>¿A dónde quieres ir?</h3>
+                        </>
+                    }
+                    {window.innerWidth >= 600 &&
+                        <>
+                        <h2>¿A dónde quieres ir?</h2>
+                        </>
+                    }
                 </div>
                 <ServiceQuest
                     icono="../../public/icons/hiking.svg"

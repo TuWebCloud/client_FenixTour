@@ -64,3 +64,18 @@ header button {
     height: 40px;
     background-color: transparent;
 }
+
+.nav-div {
+    display: flex;
+    flex-direction: row;
+    padding: 0 4%; 
+    gap: 30px;
+}
+
+.nav-div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 100;
+    letter-spacing: -0.5px;
+}

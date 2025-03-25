@@ -37,11 +37,17 @@ export default function Header({ logo, marca }) {
     useEffect(() => {
         const handleScroll = () => {
             const navbar = document.getElementById("navbar")
+            const links = document.querySelectorAll("header .nav-div a")
             const marca = document.querySelector("header h1")
 
             if (window.scrollY > 50) {
                 navbar.style.backgroundColor = "#fff"
                 marca.style.color = "#151515"
+                if (links) {
+                    links.forEach(link => {
+                        link.style.color = "#151515"
+                    })
+                }
                 setLogoTemp('/public/logo-white.jpg')
                 if (toggle === '/public/icons/menu.svg' || toggle === '/public/icons/menu-black.svg')
                     setToggle('/public/icons/menu-black.svg')
@@ -49,6 +55,11 @@ export default function Header({ logo, marca }) {
             } else {
                 navbar.style.backgroundColor = "#151515"
                 marca.style.color = "#fff"
+                if (links) {
+                    links.forEach(link => {
+                        link.style.color = "#fff"
+                    })
+                }
                 setLogoTemp('/public/logo.png')
                 if (toggle === '/public/icons/menu.svg' || toggle === '/public/icons/menu-black.svg')
                     setToggle('/public/icons/menu.svg')
@@ -92,19 +103,42 @@ export default function Header({ logo, marca }) {
     return (
         <header>
             <nav id="navbar">
-            <img src={logoTemp} alt="Logo" />
-            <h1>{marca}</h1>
-            <button onClick={handleClick}>
-                <img src={toggle} alt="toggle" />
-            </button>
+            {window.innerWidth < 600 &&
+                <>
+                <img src={logoTemp} alt="Logo" />
+                <h1>{marca}</h1>
+                </>
+            }
+            {window.innerWidth >= 600 &&
+                <div className="nav-div">
+                    <img src={logoTemp} alt="Logo" />
+                    <h1>{marca}</h1>
+                </div>
+            }
+            {window.innerWidth < 600 &&
+                <button onClick={handleClick}>
+                    <img src={toggle} alt="toggle" />
+                </button>
+            }
+            {window.innerWidth >= 600 &&
+                <div className="nav-div">
+                    <a href="#about">¿Quiénes Somos?</a>
+                    <a href="#vehiculo">Vehículo</a>
+                    <a href="#viajes">Ofertas de Viaje</a>
+                    <a href="#pagos">Métodos de Pago</a>
+                    <a href="#contact">Contáctanos</a>
+                </div>
+            }
             </nav>
-            <ul ref={listaRef}>
-                <li><a href="#about">¿Quiénes Somos?</a></li>
-                <li><a href="#vehiculo">Acerca del Vehículo</a></li>
-                <li><a href="#viajes">Ofertas de Viaje</a></li>
-                <li><a href="#pagos">Métodos de Pago</a></li>
-                <li><a href="#contact">Contáctanos</a></li>
-            </ul>
+            {window.innerWidth < 600 &&
+                <ul ref={listaRef}>
+                    <li><a href="#about">¿Quiénes Somos?</a></li>
+                    <li><a href="#vehiculo">Acerca del Vehículo</a></li>
+                    <li><a href="#viajes">Ofertas de Viaje</a></li>
+                    <li><a href="#pagos">Métodos de Pago</a></li>
+                    <li><a href="#contact">Contáctanos</a></li>
+                </ul>
+            }            
         </header>
     );
 }

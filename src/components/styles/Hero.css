@@ -71,6 +71,15 @@ section .subtitulo-hero span::before {
     z-index: -3;
 }
 
+.section-hero .subtitulo-pc {
+    position: absolute;
+    font-size: 32px;
+    margin-top: 200px;
+    margin-left: 8%;
+    text-align: left;
+    border-top: 2px solid #000;
+}
+
 .layer-1 {
     position: absolute;
     background-color: #151515;
