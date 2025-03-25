@@ -1,6 +1,12 @@
 @font-face {
     font-family: 'Jost';
-    src: url('../public/fonts/Jost-Regular.ttf') format('truetype');
+    src: url('/public/fonts/Jost-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Jost-Light';
+    src: url('/public/fonts/Jost-Light.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }

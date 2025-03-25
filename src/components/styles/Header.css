@@ -68,14 +68,19 @@ header button {
 .nav-div {
     display: flex;
     flex-direction: row;
-    padding: 0 4%; 
+    padding: 0 4%;
     gap: 30px;
 }
 
 .nav-div a {
+    font-family: Jost-Light;
     text-decoration: none;
     color: #fff;
     font-size: 22px;
     font-weight: 100;
     letter-spacing: -0.5px;
+    transition: color .2s ease;
+}
+.nav-div a:hover {
+    color: #dedede;
 }
