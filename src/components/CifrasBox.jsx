@@ -54,6 +54,12 @@ export default function CifrasBox ({ clientesSatisfechos, viajes }) {
                 .section-cifras img {
                     height: 60px;
                 }
+
+                @media screen and (max-width: 400px) {
+                    .section-cifras {
+                        padding: 4%;
+                    }
+                }
             `}</style>
         </>
     )

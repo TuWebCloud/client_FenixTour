@@ -26,6 +26,7 @@ export default function Contact () {
                 .section-contact {
                     height: auto;
                     padding-bottom: 40px;
+                    width: calc(100vw - 8%);
                 }
                 .section-contact h2 {
                     display: block;
@@ -72,6 +73,21 @@ export default function Contact () {
                 }
                 .section-contact div button img {
                     width: 40px;
+                }
+
+                @media screen and (max-width: 400px) {
+                    .section-contact {
+                        padding: 4%;
+                    }
+                    .section-contact div {
+                        margin: 0;
+                    }
+                    .section-contact div button {
+                        font-size: 25px;
+                    }
+                    .section-contact div button img {
+                        width: 30px;
+                    }
                 }
             `}</style>
         </>

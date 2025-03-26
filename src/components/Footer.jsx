@@ -3,13 +3,11 @@ export default function Footer () {
         <>
             <footer>
                 <div>
-                    <img src="/public/icons/whatsapp.svg" alt="Whatsapp" />
                     <img src="/public/icons/instagram.svg" alt="Instagram" />
-                    <img src="/public/icons/telegram.svg" alt="Telegram" />
                     <img src="/public/icons/facebook.svg" alt="Facebook" />
                 </div>
                 <p>Holguín, Holguín, Cuba.</p>
-                <p>2025 &copy; TuWeb</p>
+                <p>2025 &copy; Creado por TuWeb</p>
             </footer>
             <style jsx>{`
                 footer {
