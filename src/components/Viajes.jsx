@@ -6,17 +6,36 @@ export default function Viajes () {
             <section className="section-viajes" id="viajes">
                 <h2>Ofertas de Viaje</h2>
                 <h3>Tu destino lo eliges tú</h3>
-                <InfoBox titulo="Locales" bg="/public/la-periquera.jpeg">
+                {window.innerWidth < 600 &&
+                    <>
+                    <InfoBox titulo="Locales" bg="/public/la-periquera.jpeg">
                     Coordina viajes a múltiples lugares de la provincia, ya sea <br/>a playas, restaurantes o aeropuertos.
-                </InfoBox>
-                <InfoBox titulo="Interprovinciales" bg="/public/la-habana-info.webp">
-                    Si necesitas viajar hacia otra provincia no es un problema, con nosotros puedes trasladarte de 
-                    un extremo a otro del país.
-                </InfoBox>
-                <InfoBox titulo="Turísticos" bg="/public/playa-info.jpg">
-                    Te llevaremos a cualquier punto de interés turístico que desees, desde hoteles y campismos 
-                    hasta recorridos históricos.
-                </InfoBox>
+                    </InfoBox>
+                    <InfoBox titulo="Interprovinciales" bg="/public/la-habana-info.webp">
+                        Si necesitas viajar hacia otra provincia no es un problema, con nosotros puedes trasladarte de 
+                        un extremo a otro del país.
+                    </InfoBox>
+                    <InfoBox titulo="Turísticos" bg="/public/playa-info.jpg">
+                        Te llevaremos a cualquier punto de interés turístico que desees, desde hoteles y campismos 
+                        hasta recorridos históricos.
+                    </InfoBox>
+                    </>
+                }
+                {window.innerWidth >= 600 &&
+                    <div className="infoBox-container">
+                        <InfoBox titulo="Locales" bg="/public/la-periquera.jpeg">
+                        Coordina viajes a múltiples lugares de la provincia, ya sea <br/>a playas, restaurantes o aeropuertos.
+                        </InfoBox>
+                        <InfoBox titulo="Interprovinciales" bg="/public/la-habana-info.webp">
+                            Si necesitas viajar hacia otra provincia no es un problema, con nosotros puedes trasladarte de 
+                            un extremo a otro del país.
+                        </InfoBox>
+                        <InfoBox titulo="Turísticos" bg="/public/playa-info.jpg">
+                            Te llevaremos a cualquier punto de interés turístico que desees, desde hoteles y campismos 
+                            hasta recorridos históricos.
+                        </InfoBox>
+                    </div>
+                }
             </section>
             <style jsx>{`
                 .section-viajes {
@@ -48,6 +67,18 @@ export default function Viajes () {
                 .section-viajes h3:not(.infoBox h3) {
                     margin-top: -31px;
                     color: #ffffff77;
+                }
+
+                .infoBox-container {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-items: center;
+                    width: 100%;
+                    gap: 40px;
+                }
+                .infoBox-container div {
+                    height: 220px;
                 }
             `}</style>
         </>

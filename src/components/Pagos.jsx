@@ -7,19 +7,35 @@ export default function Pagos () {
                 <h2>Métodos de Pago</h2>
                 <h3 className='frase'>Tu viaje, tus reglas</h3>
                 <p>
-                Aceptamos pagos por transferencia bancaria y en efectivo. Siéntete libre de pagarnos de la forma que más te acomode...
+                Aceptamos pagos por transferencia bancaria y en efectivo.<br/>Siéntete libre de pagarnos de la forma que más te acomode...
                 </p>
-                <h3 className='aceptamos'>Aceptamos:</h3>
-                <div>
-                    <Moneda name='CUP' isBpa isBandec isMetropolitano />
-                    <Moneda name='MLC' isBpa isBandec />
-                    <Moneda name='USD' isZelle noBorder/>
-                </div>
+                {window.innerWidth < 600 &&
+                    <>
+                    <h3 className='aceptamos'>Aceptamos:</h3>
+                    <div>
+                        <Moneda name='CUP' isBpa isBandec isMetropolitano />
+                        <Moneda name='MLC' isBpa isBandec />
+                        <Moneda name='USD' isZelle noBorder/>
+                    </div>
+                    </>
+                }
+                {window.innerWidth >= 600 &&
+                    <div className='aceptamos-container'>
+                        <h3 className='aceptamos'>Aceptamos:</h3>
+                        <div>
+                            <Moneda name='CUP' isBpa isBandec isMetropolitano />
+                            <Moneda name='MLC' isBpa isBandec />
+                            <Moneda name='USD' isZelle noBorder/>
+                        </div>
+                    </div>
+                }
             </section>
             <style jsx>{`
                 .section-pagos {
                     height: auto;
                     box-shadow: 0 8px 20px #00000055;
+                    place-items: center;
+                    padding: 0 0 40px;
                 }
                 .section-pagos h2 {
                     display: block;
@@ -42,7 +58,7 @@ export default function Pagos () {
                     color: #00000077;
                 }
                 .section-pagos p {
-                    margin: 4%;
+                    margin: 2% 4%;
                     font-size: 24px;
                 }
                 .aceptamos {
@@ -56,6 +72,13 @@ export default function Pagos () {
                     display: flex;
                     flex-direction: column;
                     margin: 0 4%;
+                }
+
+                .aceptamos-container {
+                    border-radius: 20px;
+                    border: 1px solid #00000055;
+                    width: 500px;
+                    margin-left: 50%;
                 }
             `}</style>
         </>

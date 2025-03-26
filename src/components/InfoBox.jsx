@@ -29,9 +29,8 @@ export default function InfoBox ({ children, titulo, bg }) {
                     gap: 10px;
                     transition: all .2s ease;
                 }
-                .infoBox div:hover {
+                .infoBox div:hover > img {
                     transform: scale(1.1);
-                    box-shadow: 0 8px 20px #000000cc;
                 }
                 .infoBox h3 {
                     text-align: left;
@@ -57,6 +56,7 @@ export default function InfoBox ({ children, titulo, bg }) {
                     height: 100%;
                     z-index: 1;
                     filter: brightness(30%);
+                    transition: all .3s ease;
                 }
             `}</style>
         </>
