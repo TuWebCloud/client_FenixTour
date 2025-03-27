@@ -40,7 +40,7 @@ span {
     }
 
     header nav {
-        width: calc(100vw - 20px);
+        width: calc(100% - 20px);
         margin: 0;
         border-radius: 0;
         box-shadow: none;
@@ -71,14 +71,14 @@ span {
         line-height: 1.1;
     }
     .section-hero section {
-        margin-left: 35%;
-        margin-top: 10%;
+        margin: 10% 0 0 68%;
+        width: 400px;
     }
 
     .section-about {
         flex-direction: row;
         padding: 80px 4% 80px !important;
-        width: calc(100vw - 8%);
+        width: calc(92%);
     }
     .section-about .about-text {
         width: 40%;
@@ -109,6 +109,7 @@ span {
         gap: 0 !important;
         border-top: 1px solid #ffffff99;
         padding-top: 35px;
+        width: 100%;
     }
     .section-vehiculo h3 {
         margin-top: -15px !important;
@@ -128,17 +129,18 @@ span {
     }
 
     .section-cifras {
-        width: calc(100vw - 70%) !important;
+        width: calc(30%) !important;
         padding: 2% 35% !important;
     }
 
     .section-viajes {
         padding: 0 4% 40px !important;
-        width: calc(100vw - 8%) !important;
+        width: calc(92%) !important;
     }
 
     .section-pagos {
         background-color: #fff !important;
+        width: 100%;
     }
     .section-pagos p {
         text-align: center;
