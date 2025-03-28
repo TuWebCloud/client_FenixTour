@@ -1,13 +1,45 @@
 export default function Footer () {
+    const handleWpp = () => {
+        window.location.href = 'https://wa.me/+5352427622?text=Hola'
+    }
+
     return (
         <>
-            <footer>
-                <div>
-                    <img src="/public/icons/instagram.svg" alt="Instagram" />
-                    <img src="/public/icons/facebook.svg" alt="Facebook" />
-                </div>
+            <footer id="footer">
+                {window.innerWidth > 600 &&
+                    <>
+                    <h2>Contáctanos</h2>
+                    <p>Teléfono: +53 54545454</p>
+                    <div className="footer-contact">
+                        <button onClick={handleWpp}>
+                            <div>
+                                <img src="/public/icons/whatsapp-black.svg" alt="whatsapp" />
+                                <p>Escríbenos ya!</p>
+                            </div>
+                        </button>
+                        <button>
+                            <div>
+                                <img src="/public/icons/instagram-black.svg" alt="instagram" />
+                                <p>Síguenos en Instagram</p>
+                            </div>
+                        </button>
+                        <button>
+                            <div>
+                                <img src="/public/icons/facebook-black.svg" alt="facebook" />
+                                <p>Síguenos en Facebook</p>
+                            </div>
+                        </button>
+                    </div>
+                    </>
+                }
+                {window.innerWidth < 600 &&
+                    <div>
+                        <img src="/public/icons/instagram.svg" alt="Instagram" />
+                        <img src="/public/icons/facebook.svg" alt="Facebook" />
+                    </div>
+                }
                 <p>Holguín, Holguín, Cuba.</p>
-                <p>2025 &copy; Creado por TuWeb</p>
+                <p className="copyright">2025 &copy; Creado por TuWeb</p>
             </footer>
             <style jsx>{`
                 footer {
@@ -38,6 +70,59 @@ export default function Footer () {
                 }
                 footer p a {
                     color: #fff;
+                }
+
+                footer h2 {
+                    position: relative;
+                    display: block;
+                    text-align: center;
+                    padding: 40px 0 12px;
+                    font-size: 45px;
+                    color: #fff;
+                }
+                footer h2::after {
+                    content: '';
+                    position: absolute;
+                    height: 1px;
+                    width: 280px;
+                    background-color: #ffffff55;
+                    top: 100px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+
+                .copyright {
+                    padding-bottom: 20px;
+                }
+
+                .footer-contact {
+                    display: flex;
+                    flex-direction: column;
+                    padding-bottom: 60px;
+                }
+                .footer-contact button {
+                    font-size: 22px;
+                    width: 300px;
+                    border: none;
+                    border-radius: 20px;
+                    transition: background-color .2s ease;
+                }
+                .footer-contact button div {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: start;                    
+                    padding: 5px;
+                }
+                .footer-contact button p {
+                    color: #151515;
+                    padding: 0;
+                    font-size: 22px;
+                    height: 34px;
+                }
+                .footer-contact button:hover {
+                    cursor: pointer;
+                    background-color: #ccc;
                 }
             `}</style>
         </>

@@ -126,7 +126,7 @@ export default function Header({ logo, marca }) {
                     <a href="#vehiculo">Vehículo</a>
                     <a href="#viajes">Ofertas de Viaje</a>
                     <a href="#pagos">Métodos de Pago</a>
-                    <a href="#contact">Contáctanos</a>
+                    <a href="#footer">Contáctanos</a>
                 </div>
             }
             </nav>

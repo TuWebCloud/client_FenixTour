@@ -33,11 +33,12 @@ export default function Pagos () {
             <style jsx>{`
                 .section-pagos {
                     height: auto;
-                    box-shadow: 0 8px 20px #00000055;
+                    box-shadow: 0 15px 30px #0000003d;
                     place-items: center;
                     padding: 0 0 40px;
                 }
                 .section-pagos h2 {
+                    position: relative;
                     display: block;
                     text-align: center;
                     padding: 20px 0 12px;

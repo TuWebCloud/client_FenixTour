@@ -69,6 +69,7 @@ span {
         margin-left: 8% !important;
         color: #151515 !important;
         line-height: 1.1;
+        overflow-y: hidden;
     }
     .section-hero section {
         margin: 10% 0 0 68%;

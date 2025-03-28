@@ -29,6 +29,7 @@ export default function Contact () {
                     width: 100vw;
                 }
                 .section-contact h2 {
+                    position: relative;
                     display: block;
                     text-align: center;
                     padding: 40px 0 12px;

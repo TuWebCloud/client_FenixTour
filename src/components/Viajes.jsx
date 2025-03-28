@@ -48,6 +48,7 @@ export default function Viajes () {
                     gap: 15px;
                 }
                 .section-viajes h2 {
+                    position: relative;
                     display: block;
                     text-align: center;
                     color:  #fff;
