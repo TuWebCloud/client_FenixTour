@@ -39,7 +39,7 @@ export default function Footer () {
                     </div>
                 }
                 <p>Holguín, Holguín, Cuba.</p>
-                <p className="copyright">2025 &copy; Creado por TuWeb</p>
+                <p className="copyright">2025 &copy; Creado por TuWeb<br/>Todos los derechos reservados.</p>
             </footer>
             <style jsx>{`
                 footer {
@@ -92,13 +92,16 @@ export default function Footer () {
                 }
 
                 .copyright {
+                    font-family: Jost-Light;
+                    font-weight: 100;
+                    padding-top: 15px;
                     padding-bottom: 20px;
                 }
 
                 .footer-contact {
-                    display: flex;
                     flex-direction: column;
-                    padding-bottom: 60px;
+                    padding: 40px calc(50% - 150px) 60px calc(50% - 150px);
+                    width: calc(100vw - 10px);
                 }
                 .footer-contact button {
                     font-size: 22px;

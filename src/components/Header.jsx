@@ -3,7 +3,6 @@ import "./styles/Header.css"
 
 export default function Header({ logo, marca }) {
     const [toggle, setToggle] = useState("/public/icons/menu.svg")
-    const [logoTemp, setLogoTemp] = useState('/public/logo.png')
     const listaRef = useRef(null);
 
     useEffect(() => {
@@ -48,7 +47,6 @@ export default function Header({ logo, marca }) {
                         link.style.color = "#151515"
                     })
                 }
-                setLogoTemp('/public/logo-white.jpg')
                 if (toggle === '/public/icons/menu.svg' || toggle === '/public/icons/menu-black.svg')
                     setToggle('/public/icons/menu-black.svg')
                 else setToggle('/public/icons/close-black.svg')
@@ -60,7 +58,6 @@ export default function Header({ logo, marca }) {
                         link.style.color = "#fff"
                     })
                 }
-                setLogoTemp('/public/logo.png')
                 if (toggle === '/public/icons/menu.svg' || toggle === '/public/icons/menu-black.svg')
                     setToggle('/public/icons/menu.svg')
                 else setToggle('/public/icons/close.svg')
@@ -105,13 +102,13 @@ export default function Header({ logo, marca }) {
             <nav id="navbar">
             {window.innerWidth < 600 &&
                 <>
-                <img src={logoTemp} alt="Logo" />
+                <img src={logo} alt="Logo" />
                 <a href="#" className="home-link"><h1>{marca}</h1></a>
                 </>
             }
             {window.innerWidth >= 600 &&
                 <div className="nav-div">
-                    <img src={logoTemp} alt="Logo" />
+                    <img src={logo} alt="Logo" />
                     <a href="#" className="home-link"><h1>{marca}</h1></a>
                 </div>
             }
