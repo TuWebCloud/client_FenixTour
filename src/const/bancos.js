@@ -1,6 +1,6 @@
 export const bancos = {
-    bpa: '/public/bpa.png',
-    bandec: '/public/bandec.jpg',
-    metropolitano: '/public/metropolitano.jpg',
-    zelle: '/public/zelle.png'
+    bpa: '/public/bpa.webp',
+    bandec: '/public/bandec.webp',
+    metropolitano: '/public/metropolitano.webp',
+    zelle: '/public/zelle.webp'
 }

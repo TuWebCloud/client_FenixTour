@@ -13,9 +13,9 @@ function App() {
   return (
     <>
       <div className="full-container">
-        <Header logo="/public/logo.png" marca="FénixCar" />
+        <Header logo="/public/logo.webp" marca="FénixCar" />
         <main>
-          <Hero transporte='../public/furgoneta-hero.png' />
+          <Hero transporte='/public/furgoneta-hero.webp' />
           <About />
           <Vehiculo />
           <CifrasBox clientesSatisfechos="942" viajes="268" />

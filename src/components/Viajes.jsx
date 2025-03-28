@@ -8,14 +8,14 @@ export default function Viajes () {
                 <h3>Tu destino lo eliges tú</h3>
                 {window.innerWidth < 600 &&
                     <>
-                    <InfoBox titulo="Locales" bg="/public/la-periquera.jpeg">
+                    <InfoBox titulo="Locales" bg="/public/la-periquera.webp">
                     Coordina viajes a múltiples lugares de la provincia, ya sea <br/>a playas, restaurantes o aeropuertos.
                     </InfoBox>
                     <InfoBox titulo="Interprovinciales" bg="/public/la-habana-info.webp">
                         Si necesitas viajar hacia otra provincia no es un problema, con nosotros puedes trasladarte de 
                         un extremo a otro del país.
                     </InfoBox>
-                    <InfoBox titulo="Turísticos" bg="/public/playa-info.jpg">
+                    <InfoBox titulo="Turísticos" bg="/public/playa-info.webp">
                         Te llevaremos a cualquier punto de interés turístico que desees, desde hoteles y campismos 
                         hasta recorridos históricos.
                     </InfoBox>
@@ -23,14 +23,14 @@ export default function Viajes () {
                 }
                 {window.innerWidth >= 600 &&
                     <div className="infoBox-container">
-                        <InfoBox titulo="Locales" bg="/public/la-periquera.jpeg">
+                        <InfoBox titulo="Locales" bg="/public/la-periquera.webp">
                         Coordina viajes a múltiples lugares de la provincia, ya sea <br/>a playas, restaurantes o aeropuertos.
                         </InfoBox>
                         <InfoBox titulo="Interprovinciales" bg="/public/la-habana-info.webp">
                             Si necesitas viajar hacia otra provincia no es un problema, con nosotros puedes trasladarte de 
                             un extremo a otro del país.
                         </InfoBox>
-                        <InfoBox titulo="Turísticos" bg="/public/playa-info.jpg">
+                        <InfoBox titulo="Turísticos" bg="/public/playa-info.webp">
                             Te llevaremos a cualquier punto de interés turístico que desees, desde hoteles y campismos 
                             hasta recorridos históricos.
                         </InfoBox>

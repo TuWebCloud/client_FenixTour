@@ -2,12 +2,12 @@ import { useEffect, useState } from 'react'
 import ServiceQuest from './ServiceQuest'
 import './styles/Hero.css'
 
-export default function Hero ({ transporte }) {
-    const [vehiculo, setVehiculo] = useState('./public/furgoneta-hero.png')
+export default function Hero () {
+    const [vehiculo, setVehiculo] = useState('./public/furgoneta-hero.webp')
     
     useEffect(() => {
         if (window.innerWidth >= 600) {
-            setVehiculo('/public/microbus-pc2.png')
+            setVehiculo('/public/microbus-pc2.webp')
         }
     }, [])
 
