@@ -106,13 +106,13 @@ export default function Header({ logo, marca }) {
             {window.innerWidth < 600 &&
                 <>
                 <img src={logoTemp} alt="Logo" />
-                <h1>{marca}</h1>
+                <a href="#" className="home-link"><h1>{marca}</h1></a>
                 </>
             }
             {window.innerWidth >= 600 &&
                 <div className="nav-div">
                     <img src={logoTemp} alt="Logo" />
-                    <h1>{marca}</h1>
+                    <a href="#" className="home-link"><h1>{marca}</h1></a>
                 </div>
             }
             {window.innerWidth < 600 &&
