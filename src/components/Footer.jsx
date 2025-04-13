@@ -1,6 +1,6 @@
 export default function Footer () {
     const handleWpp = () => {
-        window.location.href = 'https://wa.me/+5352427622?text=Hola'
+        window.location.href = 'https://wa.me/+5363204408?text=Hola'
     }
 
     return (
@@ -9,7 +9,7 @@ export default function Footer () {
                 {window.innerWidth > 600 &&
                     <>
                     <h2>Contáctanos</h2>
-                    <p>Teléfono: +53 54545454</p>
+                    <p>Teléfono: +53 63204408</p>
                     <div className="footer-contact">
                         <button onClick={handleWpp}>
                             <div>
@@ -45,7 +45,6 @@ export default function Footer () {
                 footer {
                     display: grid;
                     place-content: center;
-                    border-top: 1px solid #fff;
                     height: auto;
                     width: 100vw;
                     background-color: #151515;

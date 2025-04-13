@@ -60,6 +60,18 @@ export default function Moneda({ name, noBorder, isBpa, isBandec, isMetropolitan
                 .zelle {
                     height: 34px !important;
                 }
+
+                @media screen and (max-width: 380px) {
+                    .bpa {
+                        height: 20px !important;
+                    }
+                    .bandec {
+                        height: 26px !important;
+                    }
+                    .zelle {
+                        height: 30px !important;
+                    }
+                }
             `}</style>
         </>
     )

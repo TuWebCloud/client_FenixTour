@@ -7,15 +7,15 @@ export default function Vehiculo () {
                     <h2>Vehículo</h2>
                     <h3>Características</h3>
                     <div className="bento">
-                        <p>Mercedes Benz 2019 Sprinter</p>
+                        <p>Mercedes Benz Sprinter</p>
                         <div>
-                            <img src="/public/furgoneta-interior.jpg" alt="Interior" />
+                            <img src="/public/furgoneta-interior.webp" alt="Interior" />
                         </div>
                         <div>
-                            <img src="/public/furgoneta-2.jpg" alt="Furgoneta" />
+                            <img src="/public/furgoneta-2.webp" alt="Furgoneta" />
                         </div>
                         <div>
-                            <img src="/public/furgoneta.jpg" alt="Furgoneta" />
+                            <img src="/public/furgoneta.webp" alt="Furgoneta" />
                         </div>
                     </div>
                     </>
@@ -25,15 +25,15 @@ export default function Vehiculo () {
                         <h2>Vehículo</h2>
                         <h3>Características</h3>
                         <div className="bento">
-                            <p>Mercedes Benz 2019 Sprinter</p>
+                            <p>Mercedes Benz Sprinter</p>
                             <div>
-                                <img src="/public/furgoneta-interior.jpg" alt="Interior" />
+                                <img src="/public/furgoneta-interior.webp" alt="Interior" />
                             </div>
                             <div>
-                                <img src="/public/furgoneta-2.jpg" alt="Furgoneta" />
+                                <img src="/public/furgoneta-2.webp" alt="Furgoneta" />
                             </div>
                             <div>
-                                <img src="/public/furgoneta.jpg" alt="Furgoneta" />
+                                <img src="/public/furgoneta.webp" alt="Furgoneta" />
                             </div>
                         </div>
                     </div>
