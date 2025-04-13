@@ -9,16 +9,16 @@ export default function Moneda({ name, noBorder, isBpa, isBandec, isMetropolitan
                 <p>{name}</p>
                 <div>
                     {isBpa &&
-                        <img src={bancos.bpa} alt="bpa" className='bpa' />
+                        <img src={bancos.bpa} alt="bpa" className='bpa' loading="lazy" />
                     }
                     {isBandec &&
-                        <img src={bancos.bandec} alt="bandec" className='bandec' />
+                        <img src={bancos.bandec} alt="bandec" className='bandec' loading="lazy" />
                     }
                     {isMetropolitano &&
-                        <img src={bancos.metropolitano} alt="metropolitano" className='metropolitano' />
+                        <img src={bancos.metropolitano} alt="metropolitano" className='metropolitano' loading="lazy" />
                     }
                     {isZelle &&
-                        <img src={bancos.zelle} alt="zelle" className='zelle' />
+                        <img src={bancos.zelle} alt="zelle" className='zelle' loading="lazy" />
                     }
                 </div>
             </article>

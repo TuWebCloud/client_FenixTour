@@ -39,14 +39,14 @@ export default function Viajes () {
                         hRetorno="6:00pm"
                         pasajeros="4" /* getFromApi() */ />
                     <div className="infoBox-container">                      
-                        <InfoBox titulo="Locales" bg="/public/la-periquera.webp">
+                        <InfoBox titulo="Locales" bg="/public/la-periquera.webp" loading="lazy">
                         Coordina viajes a múltiples lugares de la provincia, ya sea <br/>a playas, restaurantes o aeropuertos.
                         </InfoBox>
-                        <InfoBox titulo="Interprovinciales" bg="/public/la-habana-info.webp">
+                        <InfoBox titulo="Interprovinciales" bg="/public/la-habana-info.webp" loading="lazy">
                             Si necesitas viajar hacia otra provincia no es un problema, con nosotros puedes trasladarte de 
                             un extremo a otro del país.
                         </InfoBox>
-                        <InfoBox titulo="Turísticos" bg="/public/playa-info.webp">
+                        <InfoBox titulo="Turísticos" bg="/public/playa-info.webp" loading="lazy">
                             Te llevaremos a cualquier punto de interés turístico que desees, desde hoteles y campismos 
                             hasta recorridos históricos.
                         </InfoBox>

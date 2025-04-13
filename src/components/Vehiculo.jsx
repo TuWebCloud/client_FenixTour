@@ -27,13 +27,13 @@ export default function Vehiculo () {
                         <div className="bento">
                             <p>Mercedes Benz Sprinter</p>
                             <div>
-                                <img src="/public/furgoneta-interior.webp" alt="Interior" />
+                                <img src="/public/furgoneta-interior.webp" alt="Interior" loading="lazy" />
                             </div>
                             <div>
-                                <img src="/public/furgoneta-2.webp" alt="Furgoneta" />
+                                <img src="/public/furgoneta-2.webp" alt="Furgoneta" loading="lazy" />
                             </div>
                             <div>
-                                <img src="/public/furgoneta.webp" alt="Furgoneta" />
+                                <img src="/public/furgoneta.webp" alt="Furgoneta" loading="lazy" />
                             </div>
                         </div>
                     </div>

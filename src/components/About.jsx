@@ -29,7 +29,7 @@ export default function About () {
                         </p>
                     </div>
                     <div className="about-img">
-                        <img src="/public/furgoneta.webp" alt="furgoneta" />
+                        <img src="/public/furgoneta.webp" alt="furgoneta" loading="lazy" />
                     </div>
                     </>
                 }
