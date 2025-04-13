@@ -1,9 +1,9 @@
 export default function Contact () {
     const handleCall = () => {
-        window.location.href = 'tel:+5352427622'
+        window.location.href = 'tel:+5363204408'
     }
     const handleWpp = () => {
-        window.location.href = 'https://wa.me/+5352427622?text=Hola'
+        window.location.href = 'https://wa.me/+5363204408?text=Hola'
     }
 
     return (

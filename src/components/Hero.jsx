@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import ServiceQuest from './ServiceQuest'
 import './styles/Hero.css'
+import ViajeProgramado from './ViajeProgramado'
 
 export default function Hero () {
     const [vehiculo, setVehiculo] = useState('./public/furgoneta-hero.webp')
@@ -22,7 +23,9 @@ export default function Hero () {
             }
             </h2>
             {window.innerWidth >= 600 &&
+                <>
                 <h3 className='subtitulo-pc'>Hasta cualquier <br/>rincón de Cuba</h3>
+                </>
             }
             <img src={vehiculo} alt="Microbus" className='microbus-img' />
             <img src='../../public/cuba.svg' alt="Mapa de Cuba" className='cuba-img' />
