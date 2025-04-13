@@ -52,6 +52,7 @@ function Register() {
       }
       .section-register input:focus {
         border-radius: 15px;
+        border-bottom: 2px solid #fff;
         outline: 2px solid #f4bd0a;
       }
       .section-register button {
