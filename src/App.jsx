@@ -15,7 +15,7 @@ function App() {
   return (
     <Router>
       <div className="full-container">
-        <Header logo="/public/logo.webp" marca="FénixCar" />
+        <Header logo="/public/logo.webp" marca="FenixTour" />
         <main>
           <Routes>
             {/* Página principal */}

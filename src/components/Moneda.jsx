@@ -61,7 +61,7 @@ export default function Moneda({ name, noBorder, isBpa, isBandec, isMetropolitan
                     height: 34px !important;
                 }
 
-                @media screen and (max-width: 380px) {
+                @media screen and (max-width: 391px) {
                     .bpa {
                         height: 20px !important;
                     }
