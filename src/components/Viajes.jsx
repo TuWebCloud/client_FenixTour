@@ -31,14 +31,13 @@ export default function Viajes () {
                 }
                 {window.innerWidth >= 600 &&
                     <>
-                    {/*<ViajeProgramado 
+                    <ViajeProgramado 
                         fecha="9/4"
                         inicio="Holguín"
                         destino="Las Tunas"
                         hSalida="2:00pm"
                         hRetorno="6:00pm"
-                        pasajeros="4" /> <-- get from api */
-                    }
+                        pasajeros="4" />
                     <div className="infoBox-container">                      
                         <InfoBox titulo="Locales" bg="/public/la-periquera.webp" loading="lazy">
                         Coordina viajes a múltiples lugares de la provincia, ya sea <br/>a playas, restaurantes o aeropuertos.
