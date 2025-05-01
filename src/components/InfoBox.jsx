@@ -1,4 +1,5 @@
 import './styles/InfoBox.css'
+import ViajePil from './ViajePil'
 
 export default function InfoBox ({ children, titulo, bg }) {
     return (
@@ -6,7 +7,8 @@ export default function InfoBox ({ children, titulo, bg }) {
             <article className='infoBox'>
                 <div>
                     <h3>{titulo}</h3>
-                    <p><span>&gt; </span>{children}</p>
+                    <span>&gt; </span>
+                    {children}
                     <img src={bg} alt="background" />
                 </div>
             </article>
@@ -18,11 +20,11 @@ export default function InfoBox ({ children, titulo, bg }) {
                     padding: 10px;
                 }
 
-                .infoBox div {
+                .infoBox div:not(.pil-container) {
                     position: relative;
                     display: flex;
-                    box-shadow: 0 5px 20px #00000099;
                     flex-direction: column;
+                    box-shadow: 0 5px 20px #00000099;
                     border-radius: 20px;
                     overflow: hidden;
                     padding: 4%;
