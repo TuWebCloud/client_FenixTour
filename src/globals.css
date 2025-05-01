@@ -140,6 +140,18 @@ span {
         width: calc(92%) !important;
     }
 
+    .infoBox-container div:not(.pil-container) {
+        height: 350px !important;
+        position: relative;
+    }
+    .pil-container {
+        position: absolute;
+        width: 92% !important;
+        bottom: 15px;
+        height: auto !important;
+        z-index: 10;
+    }
+
     .section-pagos {
         background-color: #fff !important;
         width: 100%;
