@@ -3,7 +3,7 @@ export default function Contact () {
         window.location.href = 'tel:+5363204408'
     }
     const handleWpp = () => {
-        window.location.href = 'https://wa.me/+5363204408?text=Hola'
+        window.location.href = 'https://wa.me/+5363204408?text=Hola!'
     }
 
     return (
