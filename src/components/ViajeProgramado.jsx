@@ -1,11 +1,16 @@
 import { Link } from "react-router-dom";
 
 export default function ViajeProgramado ({ fecha, inicio, destino, hSalida, hRetorno, pasajeros }) {
+    const handleWpp = () => {
+        window.location.href = 'https://wa.me/+5363204408?text=Hola!%20Quiero%20hacer%20una%20reserva'
+    }
+
     return (
         <>
             <article className="article-programa">
 
             <h3>Viaje Programado <span>{fecha}</span></h3>
+
             <h4>{inicio} - {destino}</h4>
 
             <div>
@@ -13,11 +18,10 @@ export default function ViajeProgramado ({ fecha, inicio, destino, hSalida, hRet
                 <small>Retorno - {hRetorno}</small>
             </div>
 
-            <Link to="/register">
-                <button>Register</button>
-            </Link>
+            <small className="precio">- 200 CUP -</small>
+            <button onClick={handleWpp}>Quiero Reservar</button>
 
-            <small>{pasajeros}/15 Pasajeros</small>
+            <small>{pasajeros}/14 Pasajeros</small>
 
             </article>
 
@@ -43,6 +47,9 @@ export default function ViajeProgramado ({ fecha, inicio, destino, hSalida, hRet
                     font-size: 30px;
                     font-weight: 600;
                     padding: 2% 0;
+                }
+                .article-programa span {
+                    font-size: 22px;
                 }
                 .article-programa h3 span {
                     background-color: #f4bd0a88;
@@ -80,6 +87,10 @@ export default function ViajeProgramado ({ fecha, inicio, destino, hSalida, hRet
                 .article-programa button:hover {
                     cursor: pointer;
                         background-color: #f4bd0add;
+                }
+
+                .precio {
+                    color: #f4bd0aaa !important;
                 }
 
                 @media screen and (min-width: 600px) {
