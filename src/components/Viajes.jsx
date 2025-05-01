@@ -1,8 +1,9 @@
 import InfoBox from "./InfoBox";
+import ViajePil from "./ViajePil";
 import ViajeProgramado from "./ViajeProgramado";
 
 export default function Viajes () {
-    return (
+    return ( // TODO - destinos frecuentes debajo de cada viaje
         <>
             <section className="section-viajes" id="viajes">
                 <h2>Ofertas de Viaje</h2>
@@ -17,16 +18,33 @@ export default function Viajes () {
                         hRetorno="6:00pm"
                         pasajeros="4" />
                     <InfoBox titulo="Locales" bg="/public/la-periquera.webp">
-                    Coordina viajes a múltiples lugares de la provincia, ya sea <br/>a playas, restaurantes o aeropuertos.
+                    <p>Coordina viajes a múltiples lugares de la provincia, ya sea <br/>a playas, restaurantes o aeropuertos.</p>
                     </InfoBox>
+                    <div className="pil-container">
+                        <ViajePil>Banes</ViajePil>
+                        <ViajePil>Moa</ViajePil>
+                        <ViajePil>Gibara</ViajePil>
+                        <ViajePil>...</ViajePil>
+                    </div>
                     <InfoBox titulo="Interprovinciales" bg="/public/la-habana-info.webp">
-                        Si necesitas viajar hacia otra provincia no es un problema, con nosotros puedes trasladarte de 
-                        un extremo a otro del país.
+                        <p>Si necesitas viajar hacia otra provincia no es un problema, con nosotros puedes trasladarte de 
+                        un extremo a otro del país.</p>
                     </InfoBox>
+                    <div className="pil-container">
+                        <ViajePil>La Habana</ViajePil>
+                        <ViajePil>Santiago de Cuba</ViajePil>
+                        <ViajePil>Las Tunas</ViajePil>
+                        <ViajePil>...</ViajePil>
+                    </div>
                     <InfoBox titulo="Turísticos" bg="/public/playa-info.webp">
-                        Te llevaremos a cualquier punto de interés turístico que desees, desde hoteles y campismos 
-                        hasta recorridos históricos.
+                        <p>Te llevaremos a cualquier punto de interés turístico que desees, desde hoteles y campismos 
+                        hasta recorridos históricos.</p>
                     </InfoBox>
+                    <div className="pil-container">
+                        <ViajePil>Guardalavaca</ViajePil>
+                        <ViajePil>Cayo Bariay</ViajePil>
+                        <ViajePil>...</ViajePil>
+                    </div>
                     </>
                 }
                 {window.innerWidth >= 600 &&
@@ -40,15 +58,32 @@ export default function Viajes () {
                         pasajeros="4" />
                     <div className="infoBox-container">                      
                         <InfoBox titulo="Locales" bg="/public/la-periquera.webp" loading="lazy">
-                        Coordina viajes a múltiples lugares de la provincia, ya sea <br/>a playas, restaurantes o aeropuertos.
+                            <p>Coordina viajes a múltiples lugares de la provincia, ya sea <br/>a playas, restaurantes o aeropuertos.</p>
+                            <div className="pil-container">
+                                <ViajePil>Banes</ViajePil>
+                                <ViajePil>Moa</ViajePil>
+                                <ViajePil>Gibara</ViajePil>
+                                <ViajePil>...</ViajePil>
+                            </div>
                         </InfoBox>
                         <InfoBox titulo="Interprovinciales" bg="/public/la-habana-info.webp" loading="lazy">
-                            Si necesitas viajar hacia otra provincia no es un problema, con nosotros puedes trasladarte de 
-                            un extremo a otro del país.
+                            <p>Si necesitas viajar hacia otra provincia no es un problema, con nosotros puedes trasladarte de 
+                            un extremo a otro del país.</p>
+                            <div className="pil-container">
+                                <ViajePil>La Habana</ViajePil>
+                                <ViajePil>Las Tunas</ViajePil>
+                                <ViajePil>Santiago de Cuba</ViajePil>
+                                <ViajePil>...</ViajePil>
+                            </div>
                         </InfoBox>
                         <InfoBox titulo="Turísticos" bg="/public/playa-info.webp" loading="lazy">
-                            Te llevaremos a cualquier punto de interés turístico que desees, desde hoteles y campismos 
-                            hasta recorridos históricos.
+                            <p>Te llevaremos a cualquier punto de interés turístico que desees, desde hoteles y campismos 
+                            hasta recorridos históricos.</p>
+                            <div className="pil-container">
+                                <ViajePil>Guardalavaca</ViajePil>
+                                <ViajePil>Cayo Bariay</ViajePil>
+                                <ViajePil>...</ViajePil>
+                            </div>
                         </InfoBox>
                     </div>
                     </>
@@ -62,7 +97,7 @@ export default function Viajes () {
                     height: auto;
                     background-color: #151515;
                     padding-bottom: 40px;
-                    gap: 15px;
+                    gap: 20px;
                 }
                 .section-viajes h2 {
                     position: relative;
@@ -85,6 +120,15 @@ export default function Viajes () {
                 .section-viajes h3:not(.infoBox h3, .article-programa h3) {
                     margin-top: -31px;
                     color: #ffffff77;
+                }
+
+                .pil-container {
+                    margin-top: -16px;
+                    width: calc(100% - 16%);
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    gap: 8px;
                 }
 
                 .infoBox-container {
