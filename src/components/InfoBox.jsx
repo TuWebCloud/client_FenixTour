@@ -7,7 +7,6 @@ export default function InfoBox ({ children, titulo, bg }) {
             <article className='infoBox'>
                 <div>
                     <h3>{titulo}</h3>
-                    <span>&gt; </span>
                     {children}
                     <img src={bg} alt="background" />
                 </div>
@@ -28,7 +27,7 @@ export default function InfoBox ({ children, titulo, bg }) {
                     border-radius: 20px;
                     overflow: hidden;
                     padding: 4%;
-                    gap: 10px;
+                    gap: 20px;
                     transition: all .2s ease;
                 }
                 .infoBox div:hover > img {

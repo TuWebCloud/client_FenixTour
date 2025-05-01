@@ -18,6 +18,7 @@ export default function ViajeProgramado ({ fecha, inicio, destino, hSalida, hRet
                 <small>Retorno - {hRetorno}</small>
             </div>
 
+            <small>30lb × persona</small>
             <small className="precio">- 200 CUP -</small>
             <button onClick={handleWpp}>Quiero Reservar</button>
 
