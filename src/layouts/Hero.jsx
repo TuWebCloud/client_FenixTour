@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import ServiceQuest from './ServiceQuest'
+import ServiceQuest from '../components/ServiceQuest'
 import './styles/Hero.css'
 
 export default function Hero () {

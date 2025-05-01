@@ -1,4 +1,4 @@
-import Moneda from './Moneda'
+import Moneda from '../components/Moneda'
 
 export default function Pagos () {
     return (

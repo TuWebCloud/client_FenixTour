@@ -1,6 +1,6 @@
-import InfoBox from "./InfoBox";
-import ViajePil from "./ViajePil";
-import ViajeProgramado from "./ViajeProgramado";
+import InfoBox from "../components/InfoBox";
+import ViajePil from "../components/ViajePil";
+import ViajeProgramado from "../components/ViajeProgramado";
 
 export default function Viajes () {
     return ( // TODO - destinos frecuentes debajo de cada viaje
