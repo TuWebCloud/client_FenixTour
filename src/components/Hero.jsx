@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import ServiceQuest from './ServiceQuest'
 import './styles/Hero.css'
-import ViajeProgramado from './ViajeProgramado'
 
 export default function Hero () {
     const [vehiculo, setVehiculo] = useState('./public/furgoneta-hero.webp')
