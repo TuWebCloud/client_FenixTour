@@ -40,10 +40,10 @@ export default function Vehiculo () {
                 }
                 <ul>
                     <li>Compartimento para equipaje</li>
+                    <li>Equipaje: 30lb x Persona</li>
                     <li>Kit de primeros auxilios</li>
                     <li>15 capacidades</li>
                     <li>Aire acondicionado</li>
-                    <li>Salida de video</li>
                     <li>Salida de música</li>
                     <li>Entrada de puerto C</li>
                 </ul>
