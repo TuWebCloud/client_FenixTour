@@ -142,7 +142,7 @@ Please change the parent <Route path="${Q}"> to <Route path="${Q==="/"?"*":`${Q}
                 padding: 2px 10px;
                 border-radius: 20px;
             }    
-        `})]})}function Ua({children:c,titulo:o,bg:d}){return r.jsxs(r.Fragment,{children:[r.jsx("article",{className:"infoBox",children:r.jsxs("div",{children:[r.jsx("h3",{children:o}),r.jsx("span",{children:"> "}),c,r.jsx("img",{src:d,alt:"background"})]})}),r.jsx("style",{jsx:!0,children:`
+        `})]})}function Ua({children:c,titulo:o,bg:d}){return r.jsxs(r.Fragment,{children:[r.jsx("article",{className:"infoBox",children:r.jsxs("div",{children:[r.jsx("h3",{children:o}),c,r.jsx("img",{src:d,alt:"background"})]})}),r.jsx("style",{jsx:!0,children:`
                 .infoBox {
                     position: relative;
                     height: auto;
@@ -158,7 +158,7 @@ Please change the parent <Route path="${Q}"> to <Route path="${Q==="/"?"*":`${Q}
                     border-radius: 20px;
                     overflow: hidden;
                     padding: 4%;
-                    gap: 10px;
+                    gap: 20px;
                     transition: all .2s ease;
                 }
                 .infoBox div:hover > img {
@@ -190,7 +190,7 @@ Please change the parent <Route path="${Q}"> to <Route path="${Q==="/"?"*":`${Q}
                     filter: brightness(30%);
                     transition: all .3s ease;
                 }
-            `})]})}function Bd({fecha:c,inicio:o,destino:d,hSalida:s,hRetorno:m,pasajeros:b}){const j=()=>{window.location.href="https://wa.me/+5363204408?text=Hola!%20Quiero%20hacer%20una%20reserva"};return r.jsxs(r.Fragment,{children:[r.jsxs("article",{className:"article-programa",children:[r.jsxs("h3",{children:["Viaje Programado ",r.jsx("span",{children:c})]}),r.jsxs("h4",{children:[o," - ",d]}),r.jsxs("div",{children:[r.jsxs("small",{children:["Salida - ",s]}),r.jsxs("small",{children:["Retorno - ",m]})]}),r.jsx("small",{className:"precio",children:"- 200 CUP -"}),r.jsx("button",{onClick:j,children:"Quiero Reservar"}),r.jsxs("small",{children:[b,"/14 Pasajeros"]})]}),r.jsx("style",{jsx:!0,children:`
+            `})]})}function Bd({fecha:c,inicio:o,destino:d,hSalida:s,hRetorno:m,pasajeros:b}){const j=()=>{window.location.href="https://wa.me/+5363204408?text=Hola!%20Quiero%20hacer%20una%20reserva"};return r.jsxs(r.Fragment,{children:[r.jsxs("article",{className:"article-programa",children:[r.jsxs("h3",{children:["Viaje Programado ",r.jsx("span",{children:c})]}),r.jsxs("h4",{children:[o," - ",d]}),r.jsxs("div",{children:[r.jsxs("small",{children:["Salida - ",s]}),r.jsxs("small",{children:["Retorno - ",m]})]}),r.jsx("small",{children:"30lb × persona"}),r.jsx("small",{className:"precio",children:"- 200 CUP -"}),r.jsx("button",{onClick:j,children:"Quiero Reservar"}),r.jsxs("small",{children:[b,"/14 Pasajeros"]})]}),r.jsx("style",{jsx:!0,children:`
                 .article-programa {
                     display: flex;
                     flex-direction: column;
@@ -392,7 +392,7 @@ Please change the parent <Route path="${Q}"> to <Route path="${Q==="/"?"*":`${Q}
                         width: 30px;
                     }
                 }
-            `})]})}function cp(){return r.jsxs(r.Fragment,{children:[r.jsxs("section",{className:"section-vehiculo",id:"vehiculo",children:[window.innerWidth<600&&r.jsxs(r.Fragment,{children:[r.jsx("h2",{children:"Vehículo"}),r.jsx("h3",{children:"Características"}),r.jsxs("div",{className:"bento",children:[r.jsx("p",{children:"Mercedes Benz Sprinter"}),r.jsx("div",{children:r.jsx("img",{src:"/public/furgoneta-interior.webp",alt:"Interior"})}),r.jsx("div",{children:r.jsx("img",{src:"/public/furgoneta-2.webp",alt:"Furgoneta"})}),r.jsx("div",{children:r.jsx("img",{src:"/public/furgoneta.webp",alt:"Furgoneta"})})]})]}),window.innerWidth>=600&&r.jsxs("div",{className:"vehiculo-grid",children:[r.jsx("h2",{children:"Vehículo"}),r.jsx("h3",{children:"Características"}),r.jsxs("div",{className:"bento",children:[r.jsx("p",{children:"Mercedes Benz Sprinter"}),r.jsx("div",{children:r.jsx("img",{src:"/public/furgoneta-interior.webp",alt:"Interior",loading:"lazy"})}),r.jsx("div",{children:r.jsx("img",{src:"/public/furgoneta-2.webp",alt:"Furgoneta",loading:"lazy"})}),r.jsx("div",{children:r.jsx("img",{src:"/public/furgoneta.webp",alt:"Furgoneta",loading:"lazy"})})]})]}),r.jsxs("ul",{children:[r.jsx("li",{children:"Compartimento para equipaje"}),r.jsx("li",{children:"Equipaje: 30lb x Persona"}),r.jsx("li",{children:"Kit de primeros auxilios"}),r.jsx("li",{children:"15 capacidades"}),r.jsx("li",{children:"Aire acondicionado"}),r.jsx("li",{children:"Salida de música"}),r.jsx("li",{children:"Entrada de puerto C"})]})]}),r.jsx("style",{jsx:!0,children:`
+            `})]})}function cp(){return r.jsxs(r.Fragment,{children:[r.jsxs("section",{className:"section-vehiculo",id:"vehiculo",children:[window.innerWidth<600&&r.jsxs(r.Fragment,{children:[r.jsx("h2",{children:"Vehículo"}),r.jsx("h3",{children:"Características"}),r.jsxs("div",{className:"bento",children:[r.jsx("p",{children:"Mercedes Benz Sprinter"}),r.jsx("div",{children:r.jsx("img",{src:"/public/furgoneta-interior.webp",alt:"Interior"})}),r.jsx("div",{children:r.jsx("img",{src:"/public/furgoneta-2.webp",alt:"Furgoneta"})}),r.jsx("div",{children:r.jsx("img",{src:"/public/furgoneta.webp",alt:"Furgoneta"})})]})]}),window.innerWidth>=600&&r.jsxs("div",{className:"vehiculo-grid",children:[r.jsx("h2",{children:"Vehículo"}),r.jsx("h3",{children:"Características"}),r.jsxs("div",{className:"bento",children:[r.jsx("p",{children:"Mercedes Benz Sprinter"}),r.jsx("div",{children:r.jsx("img",{src:"/public/furgoneta-interior.webp",alt:"Interior",loading:"lazy"})}),r.jsx("div",{children:r.jsx("img",{src:"/public/furgoneta-2.webp",alt:"Furgoneta",loading:"lazy"})}),r.jsx("div",{children:r.jsx("img",{src:"/public/furgoneta.webp",alt:"Furgoneta",loading:"lazy"})})]})]}),r.jsxs("ul",{children:[r.jsx("li",{children:"Compartimento para equipaje"}),r.jsx("li",{children:"Kit de primeros auxilios"}),r.jsx("li",{children:"14 capacidades"}),r.jsx("li",{children:"Aire acondicionado"}),r.jsx("li",{children:"Salida de música"}),r.jsx("li",{children:"Entrada de puerto C"})]})]}),r.jsx("style",{jsx:!0,children:`
                 .section-vehiculo {
                     display: flex;
                     flex-direction: column;
